@@ -3,9 +3,11 @@ import style from './Grid.module.scss';
 import Header from '../Header/Header';
 import MainSlider from '../Slider/MainSlider';
 import Offer from '../Offers/Offer';
+import Offer2 from '../Offers/Offer2';
 import SignBlock from '../SignBlock/SignBlock';
 import GallerySlider from '../GallerySlider/GallerySlider';
 import Navbar from '../Navbar/Navbar';
+import { Route } from 'react-router-dom';
 
 
 class Grid extends React.Component {
@@ -23,7 +25,8 @@ render(){
     </div>
 
     <div className={`${style.offers} ${style.wrapper}`}>
-      <Offer />
+     <Route path='/test-repo' render={ () => <Offer />} />  
+    <Route path='/price-list' render={ () => <Offer2 />} />
         
     </div>
     <div className={`${style.sign_block} ${style.wrapper}`}>
