@@ -25,7 +25,7 @@ render(){
     </div>
 
     <div className={`${style.offers} ${style.wrapper}`}>
-     <Route path='/test-repo' render={ () => <Offer />} />  
+     <Route path='/' render={ () => <Offer />} />  
     <Route path='/price-list' render={ () => <Offer2 />} />
         
     </div>
