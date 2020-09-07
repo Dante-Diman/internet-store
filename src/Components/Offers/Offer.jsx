@@ -11,6 +11,7 @@ import img7 from '../../assets/offers/7.jpg';
 import img8 from '../../assets/offers/8.jpg';
 import img9 from '../../assets/offers/9.jpg';
 import img10 from '../../assets/offers/10.jpg';
+import { NavLink } from 'react-router-dom';
 class Offer extends React.Component {
 render(){
 
@@ -20,17 +21,43 @@ render(){
 <div className={style.gallery_box}>
 <div className={style.gallery_wrapper}>
 
-<div className={style.offer_item}><img src={img1} alt=""/></div>
-<div className={style.offer_item}><img src={img2} alt=""/></div>
-<div className={style.offer_item}><img src={img3} alt=""/></div>
-<div className={style.offer_item}><img src={img4} alt=""/></div>
-<div className={style.offer_item}><img src={img5} alt=""/></div>
-<div className={style.offer_item}><img src={img6} alt=""/></div>
-<div className={style.offer_item}><img src={img7} alt=""/></div>
-<div className={style.offer_item}><img src={img8} alt=""/></div>
-<div className={style.offer_item}><img src={img9} alt=""/></div>
-<div className={style.offer_item}><img src={img10} alt=""/></div>
-	
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/1"><img src={img1} alt=""/></NavLink>
+</div>
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/2"><img src={img2} alt=""/></NavLink>
+</div>
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/3"><img src={img3} alt=""/></NavLink>
+</div>
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/4"><img src={img4} alt=""/></NavLink>
+</div>
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/5"><img src={img5} alt=""/></NavLink>
+</div>
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/6"><img src={img6} alt=""/></NavLink>
+</div>
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/7"><img src={img7} alt=""/></NavLink>
+</div>
+
+
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/8">
+<img src={img8} alt=""/>
+</NavLink>
+</div>
+
+
+<div className={style.offer_item}>
+<NavLink to="/internet-store/catalog/9">
+<img src={img9} alt=""/>
+</NavLink></div>
+
+
+<div className={style.offer_item}><NavLink to="/internet-store/catalog/10"><img src={img10} alt=""/></NavLink></div>
 
 
 

@@ -3,7 +3,8 @@ import style from './Grid.module.scss';
 import Header from '../Header/Header';
 import MainSlider from '../Slider/MainSlider';
 import Offer from '../Offers/Offer';
-import Offer2 from '../Offers/Offer2';
+import Catalog1 from '../Offers/Catalog1';
+import Catalog2 from '../Offers/Catalog2';
 import SignBlock from '../SignBlock/SignBlock';
 import GallerySlider from '../GallerySlider/GallerySlider';
 import Navbar from '../Navbar/Navbar';
@@ -25,9 +26,9 @@ render(){
     </div>
 
     <div className={`${style.offers} ${style.wrapper}`}>
-     <Route path='/' render={ () => <Offer />} />  
-    <Route path='/price-list' render={ () => <Offer2 />} />
-        
+     <Route exact path='/' render={ () => <Offer />} />  
+    <Route exact path='/internet-store/catalog/1' render={ () => <Catalog1 />} />
+    <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} />   
     </div>
     <div className={`${style.sign_block} ${style.wrapper}`}>
    <SignBlock />
