@@ -1,73 +1,88 @@
-$column_width:95px;
-$column_height:95px;
+$column_width:395px;
+$column_height:395px;
+$icon_width:80px;
+$icon_height:200px;
+$heart_color:red;
 
-.gallery_wrapper{
+.desk{
     
     width: 100%;
     max-width: inherit;
     display: grid;
-    grid-template-columns:2*$column_width $column_width 1fr; 
-    grid-template-rows:$column_height $column_height;
+      
+    grid-template-areas:"info info" 
+                         "item buyBlock";
     
 }
-.offer_item{
-    margin-top:200px;
-    border: 1px solid black;
-    transition-duration: 0.9s;
-    -webkit-filter: brightness(60%);
-    
+.card_info{
+    grid-area: info;
+    width: 100%; 
+}
 
+.card_item{
+grid-area: item;   
+display:flex;
+justify-content: center;
+}
+
+.buy_block{
+    grid-area: buyBlock;
+}
+.zoom_item{
+    
+    border: 1px solid rgba(179, 79, 79, 0);
+    transition-duration: 0.1s;
+    opacity: 1;
+    margin-left: 100px;
     img{
-        max-width:$column_width;
-        min-height: $column_height;
+        
+        display: block;
+        width: 100%;
+        max-width: $column_width;
+       /*  max-height: $column_height; */
+       border: 1px solid rgba(179, 79, 79, 1);
+    }
+    
+}
+.zoom_item:hover{
+    
+    transition-duration: 0.1s;
+}
+.select_items{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item_icon{
+    border: 1px solid rgba(179, 79, 79, 0);
+    opacity: 1;
+    img{
+        max-width: $icon_width;
+        
+        
     }
 }
-.offer_item:hover{
+.item_icon:hover{
+    border: 1px solid rgba(19, 18, 18, 1);
+}
+
+.zoom_item:hover{
 transition-duration: 0.9s;
  -webkit-filter: brightness(100%);
 }
 
- /* .offer_item:first-child{
-     
-        grid-row-start: 1;
-        grid-row-end: 3;
-       
-    } */
-/* .offer_item:last-child{
-grid-column-start: 4;
-grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 2;
 
-} */
-/* .reflectoin_desk{
-    border:1px solid red;
-    
-} */
+
 
 @media(max-width:1095px){
    
-    .gallery_wrapper{
+   
         
-        
-        width: 100%;
-        max-width: inherit;
-        display: flex;
-        flex-direction: column;
-        min-width: $column_width;
-        
-    }
+  
 }
 @media(max-width:767px){
   
-    .gallery_wrapper{
-        
-        width: 100%;
-        max-width: inherit;
-        display: flex;
-        flex-direction: column;
-        min-width: $column_width;
-        
-    }
+ 
   
 }

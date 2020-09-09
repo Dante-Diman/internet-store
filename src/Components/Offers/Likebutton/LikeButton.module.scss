@@ -1,0 +1,28 @@
+
+$icon_width:28px;
+$icon_height:28px;
+$heart_color:red;
+
+    .like_button{
+        
+     width: $icon_width;   
+     height: $icon_height;
+   
+    }
+  
+    
+/*При наведении на родительский блок-ссылку, меняем fill у дочернего*/
+
+ .svg_link .svg_item {
+    stroke:$heart_color;
+    stroke-width:2px;
+    fill: rgba(255, 255, 255, 0);
+    
+}
+.svg_link:hover .svg_item {
+    stroke:$heart_color;
+    
+    fill: $heart_color;
+}
+    
+

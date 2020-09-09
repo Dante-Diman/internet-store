@@ -16,16 +16,14 @@ class Catalog2 extends React.Component {
             <div className={style.gallery_box}>
 
 <div className={style.gallery_wrapper}>
-<div className={style.reflectoin_desk}>
-   
+    <div className={style.reflectoin_desk}>
+        <div className={style.offer_item}>
+            <ReactImageZoom img={img2} zoomPosition='original' width='350' height='150' />    
+        </div>
     </div>
-<div className={style.offer_item}>
 
-<ReactImageZoom  {...zoomProps img=img1 } />
-           
-    </div>
     <div className={style.offer_item}>
-  
+  <img src="" alt=""/>
            
     </div>
             </div>
