@@ -2,7 +2,7 @@
 import React from 'react';
 import style from './BuyBlock.module.scss';
 import LikeButton from '../Likebutton/LikeButton';
-import Logo from '../../Navbar/Logo';   
+ 
 class BuyBlock extends React.Component {
     
     
@@ -21,7 +21,7 @@ class BuyBlock extends React.Component {
             </div>
 
             <div className={style.delivery}>
-                         <Logo/>
+                       
             <p><span>ваш регион:</span> {this.props.region} </p>
             <p><span>доставка:</span> {this.props.deliveryTime} </p>
             </div>

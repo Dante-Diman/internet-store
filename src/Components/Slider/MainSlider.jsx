@@ -23,11 +23,16 @@ display:none;
   }
   img{
  z-index:1;
- display:block; 
+ display:flex; 
 max-width:1180px;
 }
+.slick-dots li.slick-active button:before,.slick-dots li button:before{
 
-
+  font-size: 16px;
+}
+.slick-dots {
+  bottom: 25px;
+}
 `;
 
 
@@ -55,10 +60,12 @@ class MainSlider extends React.Component {
         slidesToScroll: 1,
         autoplay: false,
       autoplaySpeed: 200,
-      pauseOnHover: true,
+      pauseOnHover: false,
       arrows: false,
       adaptiveHeight:true, 
         variableWidth: true,
+        dots:true,
+       
       };
       return (
         <HomeWrapper>

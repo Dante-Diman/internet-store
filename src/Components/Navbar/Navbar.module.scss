@@ -90,85 +90,16 @@ padding: 0px 10px;
     display:none;
     
 } 
-.search_block_container{
-z-index: 10;
-display: flex;
-.login_block{
-    display: flex;
-    ul{
-        
-    display: flex;
-    
-    align-items: center;
-    justify-content: stretch;
-    
-}
-    li{
-        margin: 0 10px 0 10px;
-        font-size:$text_size;
-    }
-}
-    a{color:$text_color;}
-    a:hover{color:$text_color_hover;}
-
-    .search_block{
-    transition-duration: 0.7s;
-    width: 50px;
-    height: 42px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 10%;
-        img{
-        height: 16px;
-        width: 16px;
-        }
-
-    
-
-    }
-.search_block:focus{
-    
-    padding-right: 14px;
-   
-    justify-content: flex-end;
-    
-   
-}
-.search_block i{
-    z-index: 1;
-    
-}
-.search_block_input{
-    position: absolute;
-    z-index: 1;
-    opacity: 0.5;
-    right: 0px;
-    transition-duration: 0.7s;
-    width: 42px;
-    height: 42px;
-    text-align: left;
-    padding-left: 15px;
-    
+.search_block_mobile{
+    display: none;
 }
 
-.search_block_input:focus {
-    transition-duration: 0.7s;
-    width: 190px;
-    height: 42px;
-    opacity: 1;  
-    
-}
-
-}
-
-@media(max-width:767px){
-    .search_block_container{
-        
+@media(max-width:1095px), (max-width:767px){
+    .search_block_desktop{
             display: none;
-        
-
+    }
+    .search_block_mobile{
+        display: block;
     }
     .mobile_login_basket{
         display: block;

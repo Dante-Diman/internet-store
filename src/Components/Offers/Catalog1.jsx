@@ -62,6 +62,10 @@ toggleProductUrl_2 = () =>{
                 <div className={style.zoom_item}>
                 <ReactImageZoom img={this.state.productUrl} zoomPosition='original' />
                 </div>
+                <div className={style.zoom_item_mobile}>
+                <img src={this.state.productUrl} alt="product" />
+                
+                </div>
             </div>
             <div className={style.buy_block}>
                 <BuyBlock region={this.state.region} deliveryTime={this.state.deliveryTime}/>

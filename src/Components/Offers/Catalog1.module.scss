@@ -1,4 +1,5 @@
 $column_width:395px;
+$column_width_mobile:360px;
 $column_height:395px;
 $icon_width:80px;
 $icon_height:200px;
@@ -20,20 +21,23 @@ $heart_color:red;
 }
 
 .card_item{
-grid-area: item;   
-display:flex;
-justify-content: center;
-}
+    grid-area: item;   
+    display:flex;
+    justify-content: space-between;
+    }
 
 .buy_block{
     grid-area: buyBlock;
+}
+.zoom_item_mobile{
+display: none;
 }
 .zoom_item{
     
     border: 1px solid rgba(179, 79, 79, 0);
     transition-duration: 0.1s;
     opacity: 1;
-    margin-left: 100px;
+    
     img{
         
         display: block;
@@ -75,14 +79,32 @@ transition-duration: 0.9s;
 
 
 
-@media(max-width:1095px){
-   
+@media(max-width:1095px), (max-width:767px){
+
+    .zoom_item_mobile{
+        display: block;
+        img{
+        display: block;
+        max-width: $column_width_mobile;
+        }
+    }
+    .zoom_item{
+        display: none;
+    }
+    .card_item{
+       flex-direction: column;
+       align-items: center;
+        }  
+        .select_items{
+            flex-direction: row;
+            margin: 0;
+        }
+        .desk{
+            grid-template-areas:"info" 
+                                "item"
+                                "buyBlock";
+        }
    
         
-  
-}
-@media(max-width:767px){
-  
- 
   
 }
