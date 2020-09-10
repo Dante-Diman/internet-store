@@ -1,4 +1,4 @@
-$width_logo_image:50px;
+$width_logo_image:100px;
 $width_logo_image_small:40px;
 $burger_line_height:2px;
 $burger_line_color:#f5f114;
@@ -53,11 +53,12 @@ z-index: 10;
 }
 .navbar_logo{
     flex: 0 0 $width_logo_image;
-    border-radius: 50%;
+   /*  border-radius: 50%; */
     overflow: hidden;
     position: relative;
     z-index: 3;
 }
+
 
 .container{
 max-width: 1180px;

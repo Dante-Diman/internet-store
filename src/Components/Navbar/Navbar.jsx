@@ -1,12 +1,13 @@
 import React from 'react';
 import style from "./Navbar.module.scss";
 import {NavLink} from 'react-router-dom';
-import img from '../../assets/logo.jpg';
+import img from '../../assets/svg/logo.svg';
 
 import "@fortawesome/fontawesome-free/css/all.css";
  
 export default class Navbar extends React.Component {
-    
+   
+
  state = {
      togleswitch: true,
      togleStyleOn:style.mobile_bar,
@@ -38,7 +39,7 @@ export default class Navbar extends React.Component {
        <div className={style.navbar_body}>
       
        <NavLink exact to ="/#" activeClassName={style.navbar_logoActive} className={style.navbar_logo}>
-                                <img src={img} alt=""/> 
+                                <img src={img} alt="logo"/>  
                     </NavLink>
 
                     <div className={`${style.navbar_burger } `} onClick={this.toggleMobileMenu}>
