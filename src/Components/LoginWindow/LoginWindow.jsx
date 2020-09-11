@@ -14,13 +14,13 @@ class LoginWindow extends React.Component {
  
   state = {
     togleswitch: this.props.togleswitch,
-    togleStyleOn: this.props.togleStyleOn,
+    togleStyleOn: style.close_Window/* this.props.togleStyleOn */,
       
   }
   toggleLoginMenu = () =>{
     if(this.state.togleswitch){
    this.setState({
-      togleStyleOn:'',
+      togleStyleOn:style.open_Window,
       togleswitch:true,
    })
   }

@@ -24,7 +24,7 @@ render(){
     return (
 <div className={`${style.page_wrapper}`}>
     <div className={style.login_window_wrapper}>
-    <LoginWindow />
+    <LoginWindow togleStyleOn={style.close_Window}/>
 
     </div>
     <div className={`${style.header_container} ${style.wrapper}`}>
