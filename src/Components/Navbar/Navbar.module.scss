@@ -1,5 +1,5 @@
 $width_logo_image:100px;
-$width_logo_image_small:40px;
+$width_logo_image_small:80px;
 $burger_line_height:2px;
 $burger_line_color:#f5f114;
 
@@ -13,7 +13,6 @@ $text_size:20px;
     display: none;
 }
 .navbar{
-    
 position:fixed;
 width: 100%;
 max-width: 1180px;
@@ -21,29 +20,20 @@ top: 0;
 left:50;
 z-index: 10;
 
-}
-
-.navbar:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: purple;
-    z-index: 2; 
 
 }
+
 .navbar_body{
-    display: flex;
-    position: relative;
    
-    justify-content: space-between;
+   display: grid;
+  
     height: 80px;
     align-items: center;
+grid-template-areas: "logo list search";
+
     img{
 
-     display: block;
+     display: flex;
     
     max-width: 100%;
    
@@ -52,8 +42,8 @@ z-index: 10;
     }
 }
 .navbar_logo{
-    flex: 0 0 $width_logo_image;
-   /*  border-radius: 50%; */
+    grid-area:logo;
+  
     overflow: hidden;
     position: relative;
     z-index: 3;
@@ -64,13 +54,27 @@ z-index: 10;
 max-width: 1180px;
 margin: 0px auto;
 padding: 0px 10px;
+background-color: purple;
+}
+.container:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background-color: purple; 
+    z-index: 2; 
 }
 
 
 
-
+.navbar_menu_wrapper{
+    grid-area: list;
+}
 
 .navbar_list{
+    
     display: flex;
     position: relative;
     z-index:2;
@@ -90,20 +94,13 @@ padding: 0px 10px;
     display:none;
     
 } 
-.search_block_mobile{
-    display: none;
+.search_block{
+    grid-area: search;
+   
 }
 
 @media(max-width:1095px), (max-width:767px){
-    .search_block_desktop{
-            display: none;
-    }
-    .search_block_mobile{
-        display: block;
-    }
-    .mobile_login_basket{
-        display: block;
-    }    
+  
 
     .mobile_bar{
           display: none;
@@ -119,19 +116,21 @@ padding: 0px 10px;
     }
   
     .navbar_list{
-        display: block;
-      
-    
+        display: block; 
     }
     
     .navbar_body{
         height: 50px;
-        
+        grid-template-areas: "logo search list ";
     }
-  
+    
     .navbar_logo{
-        flex: 0 0 $width_logo_image_small;
+        width: $width_logo_image_small;
+        
        
+    }
+    .burger_wrapper{
+        grid-area: list;
     }
     /* иконка бургера */
     .navbar_burger{

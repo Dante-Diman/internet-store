@@ -12,6 +12,8 @@ export default class Navbar extends React.Component {
  state = {
      togleswitch: true,
      togleStyleOn:style.mobile_bar,
+     deployUrl:"https://dante-diman.github.io/internet-store/",
+     developmentUrl:"/internet-store/"   
 
  }
   toggleMobileMenu = () =>{
@@ -39,16 +41,20 @@ export default class Navbar extends React.Component {
        <div className={style.container}>
        <div className={style.navbar_body}>
       
-       <NavLink exact to ="/#" activeClassName={style.navbar_logoActive} className={style.navbar_logo}>
+                    <NavLink exact to ={this.state.developmentUrl} activeClassName={style.navbar_logoActive} className={style.navbar_logo}>
                                 <img src={img} alt="logo"/>  
                     </NavLink>
-                    <div className={style.search_block_mobile}>
+
+                    <div className={style.search_block}>
                     <Search />
                     </div>
-                    
+
+                    <div className={style.burger_wrapper}>
                     <div className={`${style.navbar_burger } `} onClick={this.toggleMobileMenu}>
                         <span></span>
                     </div>
+                    </div>
+                  <div className={style.navbar_menu_wrapper}>
                    <nav className={`${style.navbar_menu} ${this.state.togleStyleOn}`}  id='menu' >
                    <ul className={style.navbar_list}>
                    <li><NavLink exact to ="/woman" activeClassName={style.activeLink} className={style.navItem}>woman</NavLink></li>
@@ -56,15 +62,8 @@ export default class Navbar extends React.Component {
                    <li><NavLink exact to="/kids" activeClassName={style.activeLink} className={style.navItem}>kids</NavLink></li>
                    <li><NavLink exact to="/commingSoon" activeClassName={style.activeLink} className={style.navItem}>comming soon</NavLink></li>
                    <li><NavLink exact to="/about" activeClassName={style.activeLink} className={style.navItem}>about</NavLink></li>
-                    <div className={style.mobile_login_basket}>
-                   <li><NavLink exact to="/commingSoon" activeClassName={style.activeLink} className={style.navItem}>Login</NavLink></li>
-                   <li><NavLink exact to="/about" activeClassName={style.activeLink} className={style.navItem}>Basket</NavLink></li>
-                   </div>
-                        </ul>
-                    
+                    </ul>
                     </nav>
-                    <div className={style.search_block_desktop}>
-                    <Search />
                     </div>
                     
                     </div>

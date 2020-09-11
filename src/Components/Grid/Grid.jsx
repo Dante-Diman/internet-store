@@ -9,24 +9,39 @@ import SignBlock from '../SignBlock/SignBlock';
 import GallerySlider from '../GallerySlider/GallerySlider';
 import Navbar from '../Navbar/Navbar';
 import { Route } from 'react-router-dom';
+import LoginWindow from '../LoginWindow/LoginWindow';
 
 
 class Grid extends React.Component {
+    state = {
+        
+        deployUrl:"https://dante-diman.github.io/internet-store/",
+        developmentUrl:"/internet-store/"   
+   
+    }
+
 render(){
     return (
 <div className={`${style.page_wrapper}`}>
+    <div className={style.login_window_wrapper}>
+    <LoginWindow />
+
+    </div>
     <div className={`${style.header_container} ${style.wrapper}`}>
       
     <Route render={ () => <Navbar />} />
         </div>
         
     <div className={`${style.main_slider} `}>
+  
     <div><MainSlider /></div>
     
     </div>
 
     <div className={`${style.offers} ${style.wrapper}`}>
-     <Route exact path='/' render={ () => <Offer />} />  
+    
+
+    <Route exact path={this.state.developmentUrl} render={ () => <Offer />} />  
     <Route exact path='/internet-store/catalog/1' render={ () => <Catalog1 />} />
     <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} />   
     </div>

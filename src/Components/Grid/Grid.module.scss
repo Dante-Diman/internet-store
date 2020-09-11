@@ -33,11 +33,17 @@ padding: 0px 0px;
    background: #54656456;
   
 }
+
+
+
 @media(max-width:1024px){
     .page_wrapper{
         max-width:1024px;
         
     }  
+    .header_container{
+        height: 50px;
+    }
 }
 
 @media(max-width:767px){

@@ -1,0 +1,23 @@
+
+
+.login_window{
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    background-color: grey;
+    top:40%;
+    left:40%;
+    border-radius: 15px;
+    max-width: 360px;
+}
+.close_Window{
+    display: none;
+}
+@media(max-width:1024px){
+
+}
+
+@media(max-width:767px){
+  
+        
+    }  
