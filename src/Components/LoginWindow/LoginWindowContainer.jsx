@@ -1,16 +1,15 @@
 import React from 'react';
-
-
 import { connect } from 'react-redux';
-import Offer from './Offer';
-import {setSelectedTarif} from './../../redux/'
+import style from './LoginWindow.module.scss';
+import {CloseWindowReducer} from '../../redux/login-window-reducer';
+import LoginWindow from './LoginWindow';
 
 
 class OfferContainer extends React.Component {
  render () {
     
     return (
-      <div className={s.wrapperContent}>
+      <div className={style.wrapperContent}>
 <LoginWindow {...this.props} loginWindow={this.props.loginWindow}/>
 
       </div>
@@ -31,8 +30,8 @@ let mapStateToProps = (state) => ({
 
  let mapDispatchToProps = (dispatch) =>{
   return {
-    setSelectedTarif: (newTarif) => {
-      dispatch(setSelectedTarif(newTarif));
+    CloseWindowReducer: (close) => {
+      dispatch(CloseWindowReducer(close));
     },
     
 

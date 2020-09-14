@@ -10,37 +10,27 @@ export const HomeWrapper = styled.div`
 `;
 
 
+
 class LoginWindow extends React.Component {
  
-  state = {
-    togleswitch: this.props.togleswitch,
-    togleStyleOn: style.close_Window/* this.props.togleStyleOn */,
-      
-  }
-  toggleLoginMenu = () =>{
-    if(this.state.togleswitch){
-   this.setState({
-      togleStyleOn:style.open_Window,
-      togleswitch:true,
-   })
-  }
-  else{
-      this.setState({
-          togleStyleOn:style.close_Window,
-          togleswitch:false,
-       })
-  }
+  closeLoginMenu = () =>{
+    this.props.CloseWindowReducer.action;
+  };
+ 
 
    
-  };
+  
 
  
   
     render () {
-      
+     /*  let togleswitch = this.props.togleswitch; */
+    
+
+     console.log(this.props)
       return (
         <div className={`${style.login_window} }`}>
-<div className={`${this.state.togleStyleOn}`}>
+<div className={this.props.loginWindow.togleStyleOn}>
         <HomeWrapper>
     <Form>
         <Form.Group>
@@ -59,7 +49,7 @@ class LoginWindow extends React.Component {
           </Form.Check>
         </Form.Group>
         <Button primary type="submit">Submit</Button>
-        <Button primary type="submit" onClick={this.toggleLoginMenu}>Cancel</Button>
+        <Button primary type="submit" onClick={this.props.loginWindow.CloseWindowReducer}>Cancel</Button>
       </Form>
         </HomeWrapper>
         </div>

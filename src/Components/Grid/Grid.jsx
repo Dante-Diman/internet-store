@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Grid.module.scss';
-import Header from '../Header/Header';
+
 import MainSlider from '../Slider/MainSlider';
 import Offer from '../Offers/Offer';
 import Catalog1 from '../Offers/Catalog1';
@@ -9,7 +9,8 @@ import SignBlock from '../SignBlock/SignBlock';
 import GallerySlider from '../GallerySlider/GallerySlider';
 import Navbar from '../Navbar/Navbar';
 import { Route } from 'react-router-dom';
-import LoginWindow from '../LoginWindow/LoginWindow';
+
+import LoginWindowContainer from '../LoginWindow/LoginWindowContainer';
 
 
 class Grid extends React.Component {
@@ -24,8 +25,8 @@ render(){
     return (
 <div className={`${style.page_wrapper}`}>
     <div className={style.login_window_wrapper}>
-    <LoginWindow togleStyleOn={style.close_Window}/>
-
+    {/* <LoginWindow togleStyleOn={style.close_Window}/> */}
+    <LoginWindowContainer />
     </div>
     <div className={`${style.header_container} ${style.wrapper}`}>
       
