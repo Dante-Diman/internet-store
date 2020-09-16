@@ -5,7 +5,7 @@ import {CloseWindowReducer} from '../../redux/login-window-reducer';
 import LoginWindow from './LoginWindow';
 
 
-class OfferContainer extends React.Component {
+class LoginWindowContainer extends React.Component {
  render () {
     
     return (
@@ -38,4 +38,4 @@ let mapStateToProps = (state) => ({
   }
 } 
 
-export default connect(mapStateToProps,mapDispatchToProps) (OfferContainer);
+export default connect(mapStateToProps,mapDispatchToProps) (LoginWindowContainer);

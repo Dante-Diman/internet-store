@@ -12,17 +12,11 @@ export const HomeWrapper = styled.div`
 
 
 class LoginWindow extends React.Component {
- 
-  closeLoginMenu = () =>{
-    this.props.CloseWindowReducer.action;
-  };
- 
-
    
-  
+  closeLoginMenu = () => {
+    this.props.CloseWindowReducer();
+  };
 
- 
-  
     render () {
      /*  let togleswitch = this.props.togleswitch; */
     
@@ -49,7 +43,7 @@ class LoginWindow extends React.Component {
           </Form.Check>
         </Form.Group>
         <Button primary type="submit">Submit</Button>
-        <Button primary type="submit" onClick={this.props.loginWindow.CloseWindowReducer}>Cancel</Button>
+        <Button primary type="button" onClick={this.closeLoginMenu}>Cancel</Button>
       </Form>
         </HomeWrapper>
         </div>

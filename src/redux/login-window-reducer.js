@@ -6,9 +6,10 @@ const SET_USER_PROFILE ='SET_USER_PROFILE';
 import style from "../Components/LoginWindow/LoginWindow.module.scss";
 
 let initialState ={ 
-    togleStyleOn: '',
+    togleStyleOn: style.close_Window, 
      close: style.close_Window,
       open: style.open_Window  
+      
 }  
 
  const loginWindowReducer = (state = initialState, action) => {
@@ -17,11 +18,11 @@ let initialState ={
 
         case CLOSE_WINDOW:
                               return {...state,
-                togleStyleOn : action.close };  
+                togleStyleOn : state.close };  
                 
      case OPEN_WINDOW:
                   return {...state,
-         togleStyleOn : action.open };         
+         togleStyleOn : state.open };         
                       
             default :
                 return state;
@@ -32,11 +33,9 @@ let initialState ={
  }
 /* Action creators */
 const CLOSE_WINDOW = 'CLOSE_WINDOW';
-export const CloseWindowReducer = (close) => ({type:CLOSE_WINDOW , togleStyleOn: close}) 
+export const CloseWindowReducer = () => ({type:CLOSE_WINDOW }) 
 const OPEN_WINDOW = 'OPEN_WINDOW';
-export const OpenWindowReducer = (open) => ({type:OPEN_WINDOW , togleStyleOn: open}) 
-/* export const addPostActionCreator = () => ({type: ADD_POST})
-export const updateNewPostTextActionCreator = (text) => 
-({type: UPDATE_NEW_POST_TEXT, newText: text  })  */  
+export const OpenWindowReducer = () => ({type:OPEN_WINDOW }) 
+
 /* Action creators */
 export default loginWindowReducer;

@@ -5,6 +5,7 @@ import img from '../../assets/svg/logo.svg';
 
 import "@fortawesome/fontawesome-free/css/all.css";
 import Search from './Search';
+
  
 export default class Navbar extends React.Component {
    
@@ -46,6 +47,7 @@ export default class Navbar extends React.Component {
                     </NavLink>
 
                     <div className={style.search_block}>
+                       
                     <Search />
                     </div>
 
