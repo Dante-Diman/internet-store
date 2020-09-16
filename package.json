@@ -18,7 +18,7 @@
     "react-magic-zoom": "^1.3.1",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^3.4.3",
     "react-scroll": "^1.8.1",
     "react-slick": "^0.26.1",
     "redux": "^4.0.5",
@@ -26,6 +26,7 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
+    "allpackinstall": "npm i bootstrap-4-react && npm i classnames && npm i lodash && npm i node-sass && npm i react && npm i react-dom && npm i react-image-zoom && npm i react-redux && npm i react-router-dom && npm i react-scripts && npm i react-scroll && npm i react-slick && npm i redux && npm i styled-components && npm i typescript",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
