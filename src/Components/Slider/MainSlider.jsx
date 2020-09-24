@@ -15,7 +15,7 @@ export const HomeWrapper = styled.div`
   
   
 
-  /* padding-top:20px; */
+ 
 
 } 
 .slick-next{

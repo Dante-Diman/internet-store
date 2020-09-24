@@ -21,7 +21,6 @@ class LoginWindow extends React.Component {
      /*  let togleswitch = this.props.togleswitch; */
     
 
-     console.log(this.props)
       return (
         <div className={`${style.login_window} }`}>
 <div className={this.props.loginWindow.togleStyleOn}>

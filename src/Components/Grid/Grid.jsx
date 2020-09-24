@@ -11,7 +11,7 @@ import Navbar from '../Navbar/Navbar';
 import { Route } from 'react-router-dom';
 
 import LoginWindowContainer from '../LoginWindow/LoginWindowContainer';
-
+import Footer from '../Footer/Footer';
 
 class Grid extends React.Component {
     state = {
@@ -32,20 +32,16 @@ render(){
       
     <Route render={ () => <Navbar />} />
         </div>
-        
-    <div className={`${style.main_slider} `}>
-  
-    <div><MainSlider /></div>
-    
-    </div>
+        <div className={` ${style.site_content}`}>           
+         <Route exact path={this.state.developmentUrl} render={ () => <MainSlider />} />
+         
+          <Route exact path='/internet-store/catalog/1' render={ () => <Catalog1 />} />
+            <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} /> 
+            <Route exact path={this.state.developmentUrl} render={ () => <Offer />} />
 
-    <div className={`${style.offers} ${style.wrapper}`}>
-    
-
-    <Route exact path={this.state.developmentUrl} render={ () => <Offer />} />  
-    <Route exact path='/internet-store/catalog/1' render={ () => <Catalog1 />} />
-    <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} />   
-    </div>
+            
+           
+        </div> 
     <div className={`${style.sign_block} ${style.wrapper}`}>
    <SignBlock />
        
@@ -54,7 +50,7 @@ render(){
     <GallerySlider />
   </div>
         <div className={`${style.footer}  ${style.wrapper}`}>
-           
+           <Footer />
         </div>
    
 

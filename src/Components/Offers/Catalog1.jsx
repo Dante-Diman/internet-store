@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import ReactImageZoom from 'react-image-zoom';
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import img1 from '../../assets/catalog/jackets/1.jpg';
 import img2 from '../../assets/catalog/jackets/2.jpg';
 import style from './Catalog1.module.scss';
@@ -37,6 +37,13 @@ toggleProductUrl_2 = () =>{
                
         return (
         <div className={style.desk}>
+            <Breadcrumb>
+  <Breadcrumb.Item href="/internet-store">internet-store</Breadcrumb.Item>
+  <Breadcrumb.Item href="/internet-store/catalog/">
+  catalog
+  </Breadcrumb.Item>
+  <Breadcrumb.Item active>1</Breadcrumb.Item>
+</Breadcrumb>
             <div className={style.card_info}>
                 <p>
                 {this.state.productTitle}   

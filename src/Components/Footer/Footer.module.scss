@@ -14,13 +14,26 @@
 
 
 /* ---------------------------------------------------- */
+article{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    .copiright,.social{
+        display: flex;
+        align-content: flex-start;
+    }
+}
+
 article h4{
 color: #ffffff; 
 text-align: left;   
 margin-bottom: 15px;
+text-transform: uppercase;
 }
 
-
+.social{
+    margin-top: 25px;
+}
 .footerLink, article > p {
     font-size: 12px;
     color: #FFFFFF;
@@ -30,15 +43,21 @@ margin-bottom: 15px;
 }
 .companyName > div{
     position: relative;
-    margin-top: 20px;
+    
 }
-.companyName img{
-    position: absolute;
-    left:-18px;
-    top:-18px;
-}
+
 .companyName{
     text-align: left;
     color: #ffffff;
     
+}
+.social{
+    display: flex;
+    width: 100%;
+    
+}
+.social_item{
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
 }

@@ -28,6 +28,7 @@ export default class Navbar extends React.Component {
         this.setState({
             togleStyleOn:style.mobile_bar,
             togleswitch:true,
+
          })
     }
 
@@ -57,7 +58,7 @@ export default class Navbar extends React.Component {
                     </div>
                     </div>
                   <div className={style.navbar_menu_wrapper}>
-                   <nav className={`${style.navbar_menu} ${this.state.togleStyleOn}`}  id='menu' >
+                   <nav className={`${style.navbar_menu} ${this.state.togleStyleOn}` }  id='menu' >
                    <ul className={style.navbar_list}>
                    <li><NavLink exact to ="/woman" activeClassName={style.activeLink} className={style.navItem}>woman</NavLink></li>
                    <li><NavLink exact to="/men" activeClassName={style.activeLink} className={style.navItem}>men</NavLink></li>

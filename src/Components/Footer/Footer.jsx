@@ -1,64 +1,96 @@
 import React from 'react';
-import style from './Footer2.module.css';
+import style from './Footer.module.scss';
 import { NavLink } from 'react-router-dom';
-import CompanyLogo from '../../assets/CompanyLogo_small.png';
+import tweeter from '../../assets/social/twitter_ico.svg';
+import facebook from '../../assets/social/facebook_ico.svg';
+import instagram from '../../assets/social/instagram_ico.svg';
 
 
-class Footer2 extends React.Component {
+
+
+class Footer extends React.Component {
 render(){
 
     
     return (
 <div className={style.footer_wrap}>
             <div className={style.item}>
-                <article className={style.aboutUs}>
-                <h4>About Us</h4>
-                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    About Us  </NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Why Us  </NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Customers Stories</NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Press Resources</NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Press Releases</NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Contact us  </NavLink>
+                <article >
+                <h4>collection</h4>
+                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Woman" >
+                    Woman  </NavLink>
+                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Men" >
+                    Men  </NavLink>
+                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Kids" >
+                    Kids</NavLink>
+                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/ComingSoon" >
+                    Coming Soon</NavLink>
+                  
                     
                 </article>
             </div>
             <div className={style.item}>
-            <article className={style.Proparties}>
-            <h4>Proparties</h4>
-                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Rent a home  </NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Lease a home </NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Buy a home</NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                    Sell a home</NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/About Us/About" >
-                   Ask advices</NavLink>
+            <article >
+            <h4>site</h4>
+                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Terms of Service" >
+                Terms of Service </NavLink>
+                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Privacy Policy" >
+                    Privacy Policy</NavLink>
+                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/CopyrightPolicy" >
+                    Copyright Policy</NavLink>
+                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/PressKit" >
+                    Press Kit  </NavLink>
+                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Support" >
+                   Support</NavLink>
                    </article>
             </div>
             <div className={style.item}>
-            <article className={style.costamer_testimonals}>
-                <h4>Costamer testimonals</h4>
-                <p className={style.content}>
-                Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. Fuga 
-                voluptatibus aliquid excepturi nostrum
-                 ea vitae culpa praesentium?
-                </p>
+            <article >
+                <h4>shop</h4>
+                
+                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/AboutUs" >
+                About us</NavLink>
+                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Shipping" >
+                Shipping</NavLink>
+                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Metods" >
+                Metods</NavLink>
+                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Career" >
+                Career</NavLink>
+                <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Contact" >
+                Contact</NavLink>                  
+                
                 </article>
             </div>
             <div className={style.item}>
             <article className={style.companyName}>
-                <div><img src={CompanyLogo} alt=""/><span>Realstate company</span></div>
-                <br/>
-                <span className={style.copiright}>© cssauthor.com</span>
+                <h4>Social</h4>
+                <div>Shoper is made with love in Warsaw,</div>
+                
+                <div className={style.copiright}>2020 © All rights reserved</div>
+                <div className={style.social}>
+<div className={style.social_item}>
+<a href="https://twitter.com/">
+<img src={tweeter} alt="tweeter"/>
+</a>
+
+</div>
+<div className={style.social_item}>
+  <a href="https://www.facebook.com/">
+   <img src={facebook} alt="facebook"/>
+  </a>
+
+</div>
+<div className={style.social_item}>
+<a href="https://www.instagram.com/">
+<img src={instagram} alt="instagram"/>
+</a>
+
+</div>
+
+
+
+
+                </div>
             </article>
             </div>
     
@@ -70,4 +102,4 @@ render(){
 
 
 }
-export default Footer2;
+export default Footer;

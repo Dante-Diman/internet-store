@@ -23,10 +23,19 @@ display: flex;
     li{
         margin: 0 10px 0 10px;
         font-size:$text_size;
+        color:$text_color;
     }
+    li:hover{
+        color:$text_color_hover;
+        cursor: pointer;
+        
+    }
+
 }
     a{color:$text_color;}
-    a:hover{color:$text_color_hover;}
+    a:hover{color:$text_color_hover;
+   
+    }
 
     .search_block{
     transition-duration: 0.7s;

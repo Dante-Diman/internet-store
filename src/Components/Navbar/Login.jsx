@@ -17,7 +17,7 @@ export default class Login extends React.Component {
                     
         <div className={style.login_block}>
             <ul >
-                <li><NavLink exact to="/Login" activeClassName={style.activeLink} className={style.navItem} onClick={this.openLoginMenu}>Login</NavLink></li>
+                <li className={style.navItem} onClick={this.openLoginMenu}>Login</li>
                 <li><NavLink exact to="/Basket" activeClassName={style.activeLink} className={style.navItem}><i class="fa fa-shopping-cart" aria-hidden="true"></i></NavLink></li>
             </ul>
         </div>

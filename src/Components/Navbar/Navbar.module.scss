@@ -3,10 +3,12 @@ $width_logo_image_small:80px;
 $burger_line_height:2px;
 $burger_line_color:#f5f114;
 
-$burger_position_X:0px;
+$burger_position_X:0;
 $text_color:#ffffff;
 $text_color_hover:#f1d906;
 $text_size:20px;
+$navbarBG_color:rgba(123,132,143, 5);
+$menuBG_color:rgba(123,132,143, 5);
 
 
 .mobile_login_basket{
@@ -54,7 +56,7 @@ grid-template-areas: "logo list search";
 max-width: 1180px;
 margin: 0px auto;
 padding: 0px 10px;
-background-color: purple;
+background-color: $navbarBG_color;
 }
 .container:before{
     content: '';
@@ -63,7 +65,7 @@ background-color: purple;
     left: 0;
     width: 100%;
     height: 100%;
-background-color: purple; 
+background-color: $navbarBG_color; 
     z-index: 2; 
 }
 
@@ -87,6 +89,7 @@ background-color: purple;
     .navItem:hover{
         margin: 0 0 0 15px;
         color: $text_color_hover;
+        text-decoration: none;
     }
 
 }
@@ -104,15 +107,21 @@ background-color: purple;
 
     .mobile_bar{
           display: none;
+         
+         
       }
+     
     .navbar_menu{
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #308824;
+        right: 0;
+        width: 50%;
+        height: 40%;
+        background-color: $menuBG_color;
         padding: 70px 10px 20px 10px;
+        border: 1px solid red;
+        transition-property: top ;
+        
     }
   
     .navbar_list{
@@ -131,6 +140,9 @@ background-color: purple;
     }
     .burger_wrapper{
         grid-area: list;
+        display: flex;
+        justify-content: flex-end;
+
     }
     /* иконка бургера */
     .navbar_burger{

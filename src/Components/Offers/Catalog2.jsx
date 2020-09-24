@@ -1,42 +1,46 @@
 
 
 import React from 'react';
+import { connect } from 'react-redux';
+import {Group_1_Reducer, Group_2_Reducer} from '../../redux/catalog-reducer';
 
-import ReactImageZoom from 'react-image-zoom';
-import img1 from '../../assets/catalog/jackets/1.jpg';
-import img2 from '../../assets/catalog/jackets/2.jpg';
-import style from './Catalog1.module.scss';
+
+
+
+
+
+import ProductGroup from './ProductGroup/ProductGroup';
 class Catalog2 extends React.Component {
-
-
+ 
     render() {
-    
-               
+      
+
         return (
-            <div className={style.gallery_box}>
+<>
+<ProductGroup {...this.props} Catalog={this.props.Catalog}/>
 
-<div className={style.gallery_wrapper}>
-    <div className={style.reflectoin_desk}>
-        <div className={style.offer_item}>
-            <ReactImageZoom img={img2} zoomPosition='original' width='350' height='150' />    
-        </div>
-    </div>
 
-    <div className={style.offer_item}>
-  <img src="" alt=""/>
-           
-    </div>
-            </div>
-            
-            </div>
+</>
             );
 
-
-
-            
-               
-
-                
+   
     }
 }
-export default Catalog2;
+
+let mapStateToProps = (state) => ({
+Catalog: state.Catalog,
+  
+  
+});
+let mapDispatchToProps = (dispatch) =>{
+  return {
+    Group_1_Reducer: () => {
+      dispatch(Group_1_Reducer());
+    },
+    Group_2_Reducer: () => {
+      dispatch(Group_2_Reducer());
+    }
+
+  }
+} 
+export default connect(mapStateToProps,mapDispatchToProps) (Catalog2);
