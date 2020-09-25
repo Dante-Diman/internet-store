@@ -1,15 +1,10 @@
 
 
 import React from 'react';
-import { connect } from 'react-redux';
-import {Group_1_Reducer, Group_2_Reducer} from '../../redux/catalog-reducer';
-
-
-
-
-
-
-import ProductGroup from './ProductGroup/ProductGroup';
+import ContainerGroup1 from './ProductGroup/ContainerGroup1';
+import ContainerGroup2 from './ProductGroup/ContainerGroup2';
+import ContainerGroup3 from './ProductGroup/ContainerGroup3';
+import ContainerGroup4 from './ProductGroup/ContainerGroup4';
 class Catalog2 extends React.Component {
  
     render() {
@@ -17,9 +12,10 @@ class Catalog2 extends React.Component {
 
         return (
 <>
-<ProductGroup {...this.props} Catalog={this.props.Catalog}/>
-
-
+<ContainerGroup1 />
+<ContainerGroup2 />
+<ContainerGroup3 />
+<ContainerGroup4 />
 </>
             );
 
@@ -27,20 +23,6 @@ class Catalog2 extends React.Component {
     }
 }
 
-let mapStateToProps = (state) => ({
-Catalog: state.Catalog,
-  
-  
-});
-let mapDispatchToProps = (dispatch) =>{
-  return {
-    Group_1_Reducer: () => {
-      dispatch(Group_1_Reducer());
-    },
-    Group_2_Reducer: () => {
-      dispatch(Group_2_Reducer());
-    }
 
-  }
-} 
-export default connect(mapStateToProps,mapDispatchToProps) (Catalog2);
+
+export default Catalog2;

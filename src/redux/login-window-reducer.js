@@ -32,9 +32,9 @@ let initialState ={
 
  }
 /* Action creators */
-const CLOSE_WINDOW = 'CLOSE_WINDOW';
+const CLOSE_WINDOW = 'CLOSE_LOGIN_WINDOW';
 export const CloseWindowReducer = () => ({type:CLOSE_WINDOW }) 
-const OPEN_WINDOW = 'OPEN_WINDOW';
+const OPEN_WINDOW = 'OPEN_LOGIN_WINDOW';
 export const OpenWindowReducer = () => ({type:OPEN_WINDOW }) 
 
 /* Action creators */
