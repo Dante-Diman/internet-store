@@ -12,6 +12,7 @@ import { Route } from 'react-router-dom';
 
 import LoginWindowContainer from '../LoginWindow/LoginWindowContainer';
 import Footer from '../Footer/Footer';
+import CartContainer from '../Cart/CartContainer';
 
 class Grid extends React.Component {
     state = {
@@ -32,8 +33,9 @@ render(){
       
     <Route render={ () => <Navbar />} />
         </div>
-        <div className={` ${style.site_content}`}>           
-         <Route exact path={this.state.developmentUrl} render={ () => <MainSlider />} />
+        <div className={` ${style.site_content}`}>         
+        <Route exact path={this.state.developmentUrl} render={ () => <MainSlider />} />
+         <Route exact path='/internet-store/catalog/basket' render={ () => <CartContainer />} />
          
           <Route exact path='/internet-store/catalog/1' render={ () => <Catalog1 />} />
             <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} /> 

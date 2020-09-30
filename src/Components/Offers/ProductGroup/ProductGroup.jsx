@@ -4,14 +4,15 @@ import React from 'react';
 
 import style from './ProductGroup.module.scss';
 import ProductCard from '../ProductCard/ProductCard';
+import ProductCardContainer from '../ProductCard/ProductCardContainer';
 class ProductGroup extends React.Component {
 
   
 
 
 handleClick() {
-  
-  this.props.Group_Reducer();
+  this.props.AddToCartReducer();
+/*   this.props.Group_Reducer(); */
  
 
 }
@@ -24,8 +25,8 @@ handleClick() {
 let showMore =state.showMore;
       const numberOfItems = showMore ? state.productList.length : 4
      
-      let postElements = state.productList.slice(0, numberOfItems).map( p => (<ProductCard  id={p.id} productUrl={p.productUrl} productPrice={p.productPrice} productDescription={p.productDescription}/>));
-
+      let postElements = state.productList.slice(0, numberOfItems).map( p => (<ProductCardContainer id={p.id} productUrl={p.productUrl} productPrice={p.productPrice} productDescription={p.productDescription} />));
+     
         return (
 <>
 
