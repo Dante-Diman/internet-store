@@ -15,7 +15,8 @@ export default class ProductCard extends React.Component {
             id: this.props.id,
             productUrl:this.props.productUrl,
             productPrice:this.props.productPrice,
-            productDescription:this.props.productDescription
+            productDescription:this.props.productDescription,
+            count:this.props.count   
         }      
         let AddToCart = () => {
            
@@ -34,6 +35,7 @@ export default class ProductCard extends React.Component {
               }}></div> 
   <div className={style.product_card_description}>{this.props.productDescription}</div>
   <div className={style.product_card_price}>{this.props.productPrice}</div>
+  
   <button className={style.buy_button} onClick={AddToCart}>Добавить в корзину</button>
   </div>
                      

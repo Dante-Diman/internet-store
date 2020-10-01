@@ -13,9 +13,9 @@ class Catalog2 extends React.Component {
         return (
 <>
 <ContainerGroup1 />
-{/* <ContainerGroup2 />
+<ContainerGroup2 />
 <ContainerGroup3 />
-<ContainerGroup4 /> */}
+<ContainerGroup4 />
 </>
             );
 

@@ -3,14 +3,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import  AddToCartReducer  from '../../../redux/cart-reducer';
-import {Group_Reducer} from '../../../redux/catalog-reducer-group1';
+import {CatalogReducerGroup1} from '../../../redux/catalog-group-reducer';
 import ProductGroup from './ProductGroup';
 
 
 class ContainerGroup1 extends React.Component {
  
     render() {
-      
+     
 
         return (
 <>
@@ -25,7 +25,8 @@ class ContainerGroup1 extends React.Component {
 }
 
 let mapStateToProps = (state) => ({
-Catalog: state.ProductGroup1,
+ 
+Catalog: state.CatalogReducerGroup.Group1,
 Cart: state.Cart
   
   
@@ -33,7 +34,7 @@ Cart: state.Cart
 let mapDispatchToProps = (dispatch) =>{
   return {
     Group_Reducer: () => {
-      dispatch(Group_Reducer());
+      dispatch(CatalogReducerGroup1());
     },
     AddToCartReducer:() =>{
       dispatch(AddToCartReducer());

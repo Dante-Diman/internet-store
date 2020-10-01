@@ -18,14 +18,14 @@ handleClick() {
 }
 
     render() {
-     
+    
       let state = this.props.Catalog;
 /* группа пальто */
 
 let showMore =state.showMore;
       const numberOfItems = showMore ? state.productList.length : 4
      
-      let postElements = state.productList.slice(0, numberOfItems).map( p => (<ProductCardContainer id={p.id} productUrl={p.productUrl} productPrice={p.productPrice} productDescription={p.productDescription} />));
+      let postElements = state.productList.slice(0, numberOfItems).map( p => (<ProductCardContainer id={p.id} productUrl={p.productUrl} productPrice={p.productPrice} productDescription={p.productDescription} count={p.count}/>));
      
         return (
 <>
