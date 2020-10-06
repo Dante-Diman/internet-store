@@ -21,24 +21,28 @@ let initialState ={
   export default createReducer(initialState, {
 
     [AddToCartReducer]: function (state, action){
-   
+    
+      let p;
 
       let AddProductOptions = action.payload;
       
       let increment = action.payload.count;
-
+     
       if(state.CartList.length === 0){
         state.CartList.push(AddProductOptions) ;
 
       }
-      else{
+      if (state.CartList.length > 0){
 
         state.CartList.filter( m => ((m.id === AddProductOptions.id) ?
-        m.count=m.count+increment : state.CartList.push(AddProductOptions) )
-         
+        m.count=m.count+increment : p = true )
         );
+        if (p===true){
+          state.CartList.push(AddProductOptions);
+        } 
+        
       }
-     
+      
       
       
 
