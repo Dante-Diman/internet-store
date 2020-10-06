@@ -3,7 +3,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { DelFromCartReducer } from '../../redux/cart-reducer';
+import { AddToCartReducer, DelFromCartReducer } from '../../redux/cart-reducer';
 
 
 
@@ -34,9 +34,9 @@ Cart: state.Cart,
 });
 let mapDispatchToProps = (dispatch) =>{
   return {
-   /*  AddToCartReducer: () => {
+    AddToCartReducer: () => {
       dispatch(AddToCartReducer());
-    }, */
+    },
     DelFromCartReducer: (options) => {
       dispatch(DelFromCartReducer(options));
     },
