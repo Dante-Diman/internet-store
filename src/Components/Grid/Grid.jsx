@@ -40,14 +40,11 @@ render(){
           <Route exact path='/internet-store/catalog/1' render={ () => <Catalog1 />} />
             <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} /> 
             <Route exact path={this.state.developmentUrl} render={ () => <Offer />} />
-
+            <Route exact path={this.state.developmentUrl} render={ () => <SignBlock />} />
             
            
         </div> 
-    <div className={`${style.sign_block} ${style.wrapper}`}>
-   <SignBlock />
-       
-        </div>
+   
     <div className={`${style.listing_gallery} `}>
     <GallerySlider />
   </div>

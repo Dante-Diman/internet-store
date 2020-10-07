@@ -17,11 +17,15 @@ class Cart extends React.Component {
       
       let state = this.props.Cart;
 
-
-let showMore =state.showMore;
-      const numberOfItems = showMore ? state.CartList.length : 28
+      const numberOfItems =  state.CartList.length ;
     
-      let CartElements = state.CartList.slice(0, numberOfItems).map( p => (<CartItemContainer id={p.id} productUrl={p.productUrl} productPrice={p.productPrice} productDescription={p.productDescription} count={p.count}/>));
+      let CartElements = state.CartList.slice(1, numberOfItems).map( p => (<CartItemContainer
+         id={p.id} productUrl={p.productUrl} 
+         productPrice={p.productPrice} 
+         productDescription={p.productDescription} 
+         count={p.count}
+         
+         />));
 
         return (
 <>

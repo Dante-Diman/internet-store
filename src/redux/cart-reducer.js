@@ -1,16 +1,12 @@
 import {createAction, createReducer} from '@reduxjs/toolkit';
 
-import img1 from '../assets/catalog/TShorts/1.jpg';
 
 
 let initialState ={ 
        
     showMore: false,
-    CartList:[
-        /*   {id:1, productUrl:img1, productTitle:"TShort", productPrice:"0$", productDescription:"TShort-1", count:1  }, */
-      /*  {id:1, productUrl:img1, productTitle:"TShort", productPrice:"0$", productDescription:"TShort-1"  },
-        {id:3, productUrl:img1, productTitle:"TShort", productPrice:"0$", productDescription:"TShort-1"  },
-        {id:4, productUrl:img1, productTitle:"TShort", productPrice:"0$", productDescription:"TShort-1"  } */
+    CartList:[{},/*не убирать пустой элемент - элементы не добавляются в пустой массив*/
+   
     ],
     
     }
@@ -22,31 +18,35 @@ let initialState ={
 
     [AddToCartReducer]: function (state, action){
     
-      let p;
+      
 
       let AddProductOptions = action.payload;
       
       let increment = action.payload.count;
      
-      if(state.CartList.length === 0){
-        state.CartList.push(AddProductOptions) ;
-
-      }
-      if (state.CartList.length > 0){
-
-        state.CartList.filter( m => ((m.id === AddProductOptions.id) ?
-        m.count=m.count+increment : p = true )
+   
+      if (state.CartList.length >= 0) {
+        let p;
+        let oldCart = state.CartList.map (m => (m.count));
+        
+       state.CartList.filter( m => ((m.id === AddProductOptions.id) ?
+        m.count=m.count+increment  :  m.count  )
         );
-        if (p===true){
+        state.CartList.find( m => ((m.id === AddProductOptions.id) ?
+        p=true  :  p=false  )
+        );
+        if(p===false){
+          state.CartList.push(AddProductOptions);
+        }
+        let newCart = state.CartList.map (m => (m.count))
+        
+        if (oldCart===newCart){
           state.CartList.push(AddProductOptions);
         } 
+     
         
       }
-      
-      
-      
-
-      
+   
      
     },
 

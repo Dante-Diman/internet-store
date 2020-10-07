@@ -30,13 +30,12 @@ export default class ProductCard extends React.Component {
 
  <div className={style.product_image} style={{
                 backgroundImage: `url(${this.props.productUrl})`,
-               /*  width: this.props.IMGwidth,
-                height: this.props.IMGheight */
+               
               }}></div> 
-  <div className={style.product_card_description}>{this.props.productDescription}</div>
-  <div className={style.product_card_price}>{this.props.productPrice}</div>
+  <div className={style.product_card_description}>{options.productDescription}</div>
+  <div className={style.product_card_price}>{options.productPrice}</div>
   
-  <button className={style.buy_button} onClick={AddToCart}>Добавить в корзину</button>
+  <button className={style.buy_button} onClick={AddToCart}>add to cart</button>
   </div>
                      
             );

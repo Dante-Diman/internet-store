@@ -3,16 +3,17 @@
 import React from 'react';
 
 import style from './ProductGroup.module.scss';
-import ProductCard from '../ProductCard/ProductCard';
+
 import ProductCardContainer from '../ProductCard/ProductCardContainer';
+
 class ProductGroup extends React.Component {
 
   
 
 
 handleClick() {
-  this.props.AddToCartReducer();
-/*   this.props.Group_Reducer(); */
+
+  this.props.Group_Reducer();
  
 
 }
@@ -20,7 +21,7 @@ handleClick() {
     render() {
     
       let state = this.props.Catalog;
-/* группа пальто */
+
 
 let showMore =state.showMore;
       const numberOfItems = showMore ? state.productList.length : 4
@@ -32,8 +33,11 @@ let showMore =state.showMore;
 
 
 
-<div className={style.category_title}>Coats</div>
-<button className={style.button_show} onClick={()=> this.handleClick()}>show more <span>&#9658;</span></button>
+<div className={style.category_title}>{state.productGroupTitle}</div>
+<div>
+<button className={style.button_show} onClick={()=> this.handleClick()}>show more </button><span>➤</span>
+</div>
+
             <div className={style.product_category}>
             {postElements}    
         

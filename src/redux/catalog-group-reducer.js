@@ -22,6 +22,7 @@ let initialState ={
        
     
 Group1:{
+  productGroupTitle:"Coats",
   showMore: false,
   productList:[
     {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1},
@@ -33,6 +34,7 @@ Group1:{
   ]
 },
 Group2:{
+productGroupTitle:"outwear",
 showMore: false,
 productList:[
     {id:6, productUrl:outwear1, productTitle:"outwear", productPrice:"80$", productDescription:"outwear-1" , count:1},
@@ -45,6 +47,7 @@ productList:[
 
 },
 Group3:{
+ productGroupTitle:"TShort",
 showMore: false,
 productList:[
     {id:11, productUrl:TShort1, productTitle:"TShort", productPrice:"80$", productDescription:"TShort-1" ,count:1 },
