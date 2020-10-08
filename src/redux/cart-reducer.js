@@ -1,11 +1,12 @@
 import {createAction, createReducer} from '@reduxjs/toolkit';
-
+import coat2 from '../assets/catalog/coats/2.jpg';
 
 
 let initialState ={ 
        
     showMore: false,
-    CartList:[{},/*не убирать пустой элемент - элементы не добавляются в пустой массив*/
+    CartList:[{},
+      {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1}/*не убирать пустой элемент - элементы не добавляются в пустой массив*/
    
     ],
     
@@ -13,7 +14,8 @@ let initialState ={
   
   export const AddToCartReducer = createAction('ADD_TO_CART' ); 
   export const DelFromCartReducer = createAction('DEL_FROM_CART'); 
-
+export const up_QTYReducer = createAction('up_QTY'); 
+export const down_QTYReducer = createAction('down_QTY'); 
   export default createReducer(initialState, {
 
     [AddToCartReducer]: function (state, action){
@@ -57,7 +59,24 @@ let initialState ={
       let DelProdDesc = action.payload.productDescription;
        let  delproduct = state.CartList.findIndex(product => ((product.id === delid) && (product.productDescription === DelProdDesc)));
        state.CartList.splice(delproduct, 1);
-    }
+    },
+    [up_QTYReducer]:function (state, action){
+      let AddProductOptions = action.payload;
+      let increment = 1;
+      state.CartList.filter( m => ((m.id === AddProductOptions.id) ?
+       m.count=m.count+increment  :  m.count  )
+        );
+    },
+    [down_QTYReducer]:function (state, action){
+      let AddProductOptions = action.payload;
+      let increment = 1;
+      if (AddProductOptions.count > 1){
+        state.CartList.filter( m => ((m.id === AddProductOptions.id) ?
+       m.count=m.count-increment  :  m.count  )
+        );
+      }
+      
+    },
 
   }) 
 

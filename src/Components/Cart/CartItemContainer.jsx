@@ -3,7 +3,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { AddToCartReducer, DelFromCartReducer } from '../../redux/cart-reducer';
+import { AddToCartReducer, DelFromCartReducer, down_QTYReducer, up_QTYReducer } from '../../redux/cart-reducer';
 
 
 
@@ -40,6 +40,13 @@ let mapDispatchToProps = (dispatch) =>{
     DelFromCartReducer: (options) => {
       dispatch(DelFromCartReducer(options));
     },
+    up_QTYReducer: (options) => {
+      dispatch(up_QTYReducer(options));
+    },
+    down_QTYReducer: (options) => {
+      dispatch(down_QTYReducer(options));
+    },
+    
    
   }
 } 

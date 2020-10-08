@@ -29,16 +29,25 @@ class Cart extends React.Component {
 
         return (
 <>
-
-
-
-<div className={style.category_title}>Coats</div>
+<div className={`${style.Cart_Title_Block}`}>
+<p className={`${style.Cart_Title}`}>Your Shopping Bag</p>
+<i className={`${style.Cart_Title_description}`}>Items reserved for limited time only</i>
+</div>
+<div className={style.category_title}>
+  <div className={`${style.cartItem_column}`} >PRODUCT</div>
+  <div className={`${style.cartItem_column}`}>DESCRIPTION</div>
+  <div className={`${style.cartItem_column}`}>COLOR</div>
+  <div className={`${style.cartItem_column}`}>SIZE</div>
+  <div className={`${style.cartItem_column}`}>QTY</div>
+  <div className={`${style.cartItem_column}`}>AMOUNT</div>
+  <div className={`${style.cartItem_column}`}>DELETE</div>
+</div>
 
             <div className={style.product_category}>
             {CartElements}    
         
             </div>
-
+<div className={`${style.cart_totalSum}`}></div>
 </>
             );
 
