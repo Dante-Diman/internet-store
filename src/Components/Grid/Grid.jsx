@@ -5,6 +5,7 @@ import MainSlider from '../Slider/MainSlider';
 import Offer from '../Offers/Offer';
 import Catalog1 from '../Offers/Catalog1';
 import Catalog2 from '../Offers/Catalog2';
+import Catalog3 from '../Offers/Catalog3';
 import SignBlock from '../SignBlock/SignBlock';
 import GallerySlider from '../GallerySlider/GallerySlider';
 import Navbar from '../Navbar/Navbar';
@@ -38,7 +39,8 @@ render(){
          <Route exact path='/internet-store/catalog/basket' render={ () => <CartContainer />} />
          
           <Route exact path='/internet-store/catalog/1' render={ () => <Catalog1 />} />
-            <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} /> 
+            <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} />
+            <Route exact path='/internet-store/catalog/3' render={ () => <Catalog3 />} />  
             <Route exact path={this.state.developmentUrl} render={ () => <Offer />} />
             <Route exact path={this.state.developmentUrl} render={ () => <SignBlock />} />
             

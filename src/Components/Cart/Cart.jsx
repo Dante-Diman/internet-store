@@ -5,6 +5,7 @@ import React from 'react';
 
 import style from './Cart.module.scss';
 import CartItemContainer from './CartItemContainer';
+import CartShiping from './CartShiping';
 
 class Cart extends React.Component {
 
@@ -48,6 +49,17 @@ class Cart extends React.Component {
         
             </div>
 <div className={`${style.cart_totalSum}`}></div>
+
+<div className={`${style.Cart_Title_Block}`}>
+<p className={`${style.Cart_Title}`}>Shipping address </p>
+<i className={`${style.Cart_Title_description}`}>All fields are required</i>
+</div>
+<CartShiping />
+<div className={`${style.Cart_Title_Block}`}>
+<p className={`${style.Cart_Title}`}>Payment options</p>
+<i className={`${style.Cart_Title_description}`}>All fields are required</i>
+</div>
+
 </>
             );
 
