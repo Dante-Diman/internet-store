@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import style from '../Offer.module.scss';
+
 import img1 from '../../../assets/offers/1.jpg';
 import img2 from '../../../assets/offers/2.jpg';
 import img3 from '../../../assets/offers/3.jpg';
@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    display: 'grid',
-    gridAutoFlow: 'column dense',
+    display: 'flex',
+   
   
   
     width: 850,

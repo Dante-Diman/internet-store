@@ -11,13 +11,13 @@ $column_height:295px;
 }
 .offer_item{
     transition-duration: 0.9s;
-    -webkit-filter: brightness(60%);
+    filter: brightness(60%);
     max-width:$column_width;
     min-height: $column_height;
 }
 .offer_item:hover{
 transition-duration: 0.9s;
- -webkit-filter: brightness(100%);
+ filter: brightness(100%);
 }
 
  .offer_item:first-child{
@@ -49,6 +49,6 @@ grid-column-end: 5;
     }
     .offer_item{
         
-         -webkit-filter: brightness(100%);
+         filter: brightness(100%);
         }
 }

@@ -1,6 +1,7 @@
 
 
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import style from './ProductCard.module.scss';
 
 
@@ -31,8 +32,10 @@ export default class ProductCard extends React.Component {
  <div className={style.product_image} style={{
                 backgroundImage: `url(${this.props.productUrl})`,
                
-              }}></div> 
+              }}></div>
+   <NavLink exact to ="/internet-store/catalog/2/product" onClick={AddToCart}>            
   <div className={style.product_card_description}>{options.productDescription}</div>
+  </NavLink>
   <div className={style.product_card_price}>{options.productPrice}</div>
   
   <button className={style.buy_button} onClick={AddToCart}>add to cart</button>
