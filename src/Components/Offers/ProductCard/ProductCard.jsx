@@ -24,7 +24,11 @@ export default class ProductCard extends React.Component {
             this.props.AddToCartReducer(options);
            
         }
-               
+        let ShowDatails = () => {
+           
+            this.props.ShowDatailsReducer(options);
+           
+        }       
         return (
           
               <div className={style.product_card} >
@@ -33,7 +37,7 @@ export default class ProductCard extends React.Component {
                 backgroundImage: `url(${this.props.productUrl})`,
                
               }}></div>
-   <NavLink exact to ="/internet-store/catalog/2/product" onClick={AddToCart}>            
+   <NavLink exact to ="/internet-store/catalog/2/product" onClick={ShowDatails}>            
   <div className={style.product_card_description}>{options.productDescription}</div>
   </NavLink>
   <div className={style.product_card_price}>{options.productPrice}</div>

@@ -118,4 +118,3 @@ Group4: {
     }
   })      
 
-console.log(CatalogReducerGroup4)

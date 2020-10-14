@@ -84,4 +84,3 @@ export const down_QTYReducer = createAction('down_QTY');
  
 
  
-console.log(AddToCartReducer)

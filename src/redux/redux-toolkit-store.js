@@ -4,11 +4,11 @@ import {combineReducers, configureStore } from '@reduxjs/toolkit';
 import loginWindowReducer from './login-window-reducer';
 import CatalogReducerGroup from './catalog-group-reducer';
 import AddToCartReducer from './cart-reducer';
-import showDatailsReducer from './product-details-reducer';
+import ShowDatailsReducer from './product-details-reducer';
 
 const rootReducer = combineReducers(
 {
-    ProductDetails: showDatailsReducer,
+    ProductOptions: ShowDatailsReducer,
     CatalogReducerGroup: CatalogReducerGroup,
     Cart: AddToCartReducer,   
 loginWindow: loginWindowReducer,

@@ -4,6 +4,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import  AddToCartReducer  from '../../../redux/cart-reducer';
 import {CatalogReducerGroup1} from '../../../redux/catalog-group-reducer';
+/* import { ShowDatailsReducer } from '../../../redux/product-details-reducer'; */
 import ProductGroup from './ProductGroup';
 
 
@@ -38,7 +39,10 @@ let mapDispatchToProps = (dispatch) =>{
     },
     AddToCartReducer:() =>{
       dispatch(AddToCartReducer());
-    }
+    },
+    /* ShowDatailsReducer:() =>{
+      dispatch(ShowDatailsReducer ());
+    } */
   }
 } 
 export default connect(mapStateToProps,mapDispatchToProps) (ContainerGroup1);

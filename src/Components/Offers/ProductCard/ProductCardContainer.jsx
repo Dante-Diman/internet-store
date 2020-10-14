@@ -3,6 +3,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {AddToCartReducer} from '../../../redux/cart-reducer';
+import { ShowDatailsReducer } from '../../../redux/product-details-reducer';
 
 import ProductCard from './ProductCard';
 
@@ -36,6 +37,9 @@ let mapDispatchToProps = (dispatch) =>{
    
     AddToCartReducer:(options) =>{
       dispatch(AddToCartReducer(options));
+    },
+    ShowDatailsReducer:(options) =>{
+      dispatch(ShowDatailsReducer(options));
     }
   }
 } 

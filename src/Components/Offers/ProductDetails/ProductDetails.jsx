@@ -7,8 +7,14 @@ import { Breadcrumb } from 'react-bootstrap';
 class ProductDetails extends React.Component {
  
     render() {
-        debugger;
-        console.log(this.props);
+        let options= {
+            id: this.props.ProductOptions.id,
+            productUrl:this.props.ProductOptions.productUrl,
+            productPrice:this.props.ProductOptions.productPrice,
+            productDescription:this.props.ProductOptions.productDescription,
+            count:this.props.ProductOptions.count   
+        }      
+      
 
         return (
 <>
@@ -20,12 +26,12 @@ class ProductDetails extends React.Component {
   <Breadcrumb.Item href="/internet-store/catalog/2">
   all
   </Breadcrumb.Item>
-        <Breadcrumb.Item active>product:{this.props.id}</Breadcrumb.Item>
+        <Breadcrumb.Item active>product:{options.id}</Breadcrumb.Item>
 </Breadcrumb>
 
 
 
-<div ></div>
+
 
 
 </>
