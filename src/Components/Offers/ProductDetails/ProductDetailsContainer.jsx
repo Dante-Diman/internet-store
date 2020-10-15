@@ -18,7 +18,7 @@ class ProductDetailsContainer extends React.Component {
 
         return (
 <>
-<ProductDetails {...this.props}  />
+<ProductDetails {...this.props}  ProductOptions={this.props.ProductOptions}/>
 
 
 </>
