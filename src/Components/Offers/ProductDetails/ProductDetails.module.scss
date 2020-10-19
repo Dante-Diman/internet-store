@@ -1,16 +1,21 @@
 .card{
 display: flex;
 width: 100%;
-
-
 }
+
+
 .main_image{
     position: relative;
     max-width: 1180px;
     max-height: 590px;
     width: 100%;
+    height: 590px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     .image_icons_wrapper{
         display: flex;
+        flex-direction: column;
         max-width: 70px;
         position: absolute;
         right: 10px;
@@ -21,14 +26,23 @@ width: 100%;
 .icon_image{
         width: 70px;
         height: 70px;
-        background-color: black;
+        background-color: #f7f7f7;
+        border: 1px solid #e5e5e5;
+        margin-top: 10px;
+}
+.icon_image:hover{
+    border: 1px solid #000000;
+    
+    
 }
 .card{
     display: block;
     font-family: Lato;
+    color: #606060;
     .card_title{
         font-size: 36px;
         text-transform: uppercase;
+        color: #000000;
     }  
     .card_article{
         font-family: "Lato - Italic";
@@ -39,5 +53,39 @@ width: 100%;
         text-transform: uppercase;
         font-size: 18px;
         color: #606060;
+    }
+    .card_productDescription{
+        font-size: 18px;
+        color: #606060;
+    }
+    .size_title{
+        text-transform: uppercase;
+        font-size: 18px;
+      font-weight: 700;
+    }
+    .card_sizes_container{
+       display: flex;
+       justify-content: center;
+       margin-bottom: 49px;
+         
+    }
+    .sizeOpt{
+        width: 32px;
+        height: 32px;
+        background-color: chocolate;
+        font-size: 18px;
+        margin: 0 7px;
+
+    }
+    .buy_button{
+
+        color:white;
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: rgb(252, 160, 39);
+        border: 1px solid black;
+        width: 194px;
+        height: 51px;
+        margin-bottom: 76px;
     }
 }

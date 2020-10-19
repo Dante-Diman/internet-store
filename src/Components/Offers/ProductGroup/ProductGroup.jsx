@@ -26,7 +26,17 @@ handleClick() {
 let showMore =state.showMore;
       const numberOfItems = showMore ? state.productList.length : 4
      
-      let postElements = state.productList.slice(0, numberOfItems).map( p => (<ProductCardContainer id={p.id} productTitle={p.productTitle} productUrl={p.productUrl} productPrice={p.productPrice} productDescription={p.productDescription} count={p.count}/>));
+      let postElements = state.productList.slice(0, numberOfItems).map( p => (
+      <ProductCardContainer 
+
+      
+      id={p.id} 
+      productTitle={p.productTitle} 
+      productUrl={p.productUrl} 
+      productPrice={p.productPrice} 
+      productDescription={p.productDescription} 
+      count={p.count} 
+      sizes={p.sizes}/>));
      
         return (
 <>

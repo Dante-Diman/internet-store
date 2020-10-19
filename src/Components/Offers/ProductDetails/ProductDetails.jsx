@@ -1,24 +1,40 @@
 
 import React from 'react';
 import { Breadcrumb } from 'react-bootstrap';
+import SizeButton from '../AddToCartButton/SizeButton';
+import sizeButton from '../AddToCartButton/SizeButton'
+
 
 import style from './ProductDetails.module.scss';
 
 class ProductDetails extends React.Component {
  
     render() {
-        
+       
         let options= {
             id: this.props.ProductOptions.id ,
             productTitle: this.props.ProductOptions.productTitle,
             productUrl:this.props.ProductOptions.productUrl,
             productPrice:this.props.ProductOptions.productPrice,
             productDescription:this.props.ProductOptions.productDescription,
-            count:this.props.ProductOptions.count   
-        }      
-     
-      
+            count:this.props.ProductOptions.count,   
+            sizes:this.props.ProductOptions.sizes,
+            size:this.props.ProductOptions.size
+        } 
        
+       
+      
+        /* const numberOfItems =  4 */  
+     
+        let sizeElements = options.sizes.map( p => (
+            <SizeButton size={p} />));
+
+            
+            let AddToCart = () => {
+           
+                this.props.AddToCartReducer(options);
+               
+            }
         return (
 <>
 <Breadcrumb>
@@ -33,8 +49,11 @@ class ProductDetails extends React.Component {
 </Breadcrumb>
 
 <div className={style.card}>
-    <div className={style.main_image}>
-
+    <div className={style.main_image} style={{
+    backgroundImage: `url(${options.productUrl})`,
+               
+              }}>
+   
         <div className={style.image_icons_wrapper}>
             <div className={style.icon_image}></div>
             <div className={style.icon_image}></div>
@@ -48,6 +67,12 @@ class ProductDetails extends React.Component {
         <div className={style.card_price}>{options.productPrice}</div>
     </div>
     <div className={style.card_productDescription}>{options.productDescription}</div>
+    <p className={style.size_title}>Size</p>
+    <div className={style.card_sizes_container}>
+       
+    {sizeElements}
+    </div>
+    <button className={style.buy_button} onClick={AddToCart}>add to cart</button>
 </div>         
 
 

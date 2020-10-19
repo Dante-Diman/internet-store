@@ -6,16 +6,18 @@ let initialState ={
        
     showMore: false,
     CartList:[{},
-      {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1}/*не убирать пустой элемент - элементы не добавляются в пустой массив*/
+      {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1, size:null}/*не убирать пустой элемент - элементы не добавляются в пустой массив*/
    
     ],
     
     }
   
   export const AddToCartReducer = createAction('ADD_TO_CART' ); 
+  export const chosenSizeReducer = createAction('CHOSEN_SIZE' ); 
   export const DelFromCartReducer = createAction('DEL_FROM_CART'); 
 export const up_QTYReducer = createAction('up_QTY'); 
 export const down_QTYReducer = createAction('down_QTY'); 
+
   export default createReducer(initialState, {
 
     [AddToCartReducer]: function (state, action){
@@ -51,7 +53,7 @@ export const down_QTYReducer = createAction('down_QTY');
    
      
     },
-
+   
 
     [DelFromCartReducer]: function (state, action){
      
@@ -77,7 +79,11 @@ export const down_QTYReducer = createAction('down_QTY');
       }
       
     },
-
+    [chosenSizeReducer]: function (state, action){
+      debugger;
+      let newSize = action.payload;
+        console.log('выбран размер'+ newSize)
+    },
   }) 
 
  

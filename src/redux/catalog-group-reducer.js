@@ -25,11 +25,11 @@ Group1:{
   productGroupTitle:"Coats",
   showMore: false,
   productList:[
-    {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1},
-    {id:2, productUrl:coat3, productTitle:"Coat",productPrice:"100$", productDescription:"Coat-2" , count:1},
-    {id:3, productUrl:coat1, productTitle:"Coat", productPrice:"80$", productDescription:"Coat-3" , count:1},
-    {id:4, productUrl:coat4, productTitle:"Coat",productPrice:"200$", productDescription:"Coat-4" , count:1},
-    {id:5, productUrl:coat5, productTitle:"Coat",productPrice:"150$", productDescription:"Coat-5" , count:1}
+    {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1, sizes:[38,39,40,42]},
+    {id:2, productUrl:coat3, productTitle:"Coat",productPrice:"100$", productDescription:"Coat-2" , count:1, sizes:[35,44,40,42]},
+    {id:3, productUrl:coat1, productTitle:"Coat", productPrice:"80$", productDescription:"Coat-3" , count:1,},
+    {id:4, productUrl:coat4, productTitle:"Coat",productPrice:"200$", productDescription:"Coat-4" , count:1,},
+    {id:5, productUrl:coat5, productTitle:"Coat",productPrice:"150$", productDescription:"Coat-5" , count:1,}
 
   ]
 },
@@ -37,7 +37,7 @@ Group2:{
 productGroupTitle:"outwear",
 showMore: false,
 productList:[
-    {id:6, productUrl:outwear1, productTitle:"outwear", productPrice:"80$", productDescription:"outwear-1" , count:1},
+    {id:6, productUrl:outwear1, productTitle:"outwear", productPrice:"80$", productDescription:"outwear-1" , count:1,size:null},
     {id:7, productUrl:outwear2, productTitle:"outwear", productPrice:"50$", productDescription:"outwear-2" , count:1},
     {id:8, productUrl:outwear3, productTitle:"outwear", productPrice:"40$", productDescription:"outwear-3" , count:1},
     {id:9, productUrl:outwear4, productTitle:"outwear", productPrice:"70$", productDescription:"outwear-4" , count:1},
@@ -114,6 +114,7 @@ Group4: {
       else{
         state.Group1.showMore = false
       }
+      
     
     }
   })      

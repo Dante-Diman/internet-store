@@ -12,13 +12,17 @@ export default class ProductCard extends React.Component {
  
  
     render() {
+        
         let options= {
+            
             id: this.props.id,
             productUrl:this.props.productUrl,
             productPrice:this.props.productPrice,
             productDescription:this.props.productDescription,
-            count:this.props.count   
-        }      
+            count:this.props.count,
+            sizes:this.props.sizes   
+        }  
+
         let AddToCart = () => {
            
             this.props.AddToCartReducer(options);
