@@ -1,35 +1,25 @@
 import React from 'react'; 
-import { connect } from 'react-redux';
-import { chosenSizeReducer } from '../../../redux/cart-reducer';
 import style from './SizeButton.module.scss';
 
 class SizeButton extends React.Component {
     
            
     render() {
-            debugger;
-        let  options = {
-                size : this.props.size 
-        }
-              
-       let ChosenSize = () =>{
-               this.props.chosenSizeReducer();
+           
+        
+              let  size = this.props.size ;
+       
+
+       let chosenSizeReducer = () => {
+               this.props.chosenSizeReducer(size);
         } 
          
       
         
           
         return (
-<button onClick={ChosenSize} className={style.sizeOpt}>  {options.size}</button>
+<button className={style.sizeOpt} onClick={chosenSizeReducer}>  {size}</button>
         )
 }}
-let mapDispatchToProps = (dispatch) =>{
-        return {
-         
-         
-          ChosenSize:(p) =>{
-            dispatch(chosenSizeReducer(p));
-          },
-        }
-      } 
-export default connect(mapDispatchToProps) (SizeButton);
+
+export default SizeButton;

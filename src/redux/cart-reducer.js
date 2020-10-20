@@ -13,10 +13,11 @@ let initialState ={
     }
   
   export const AddToCartReducer = createAction('ADD_TO_CART' ); 
-  export const chosenSizeReducer = createAction('CHOSEN_SIZE' ); 
+   
   export const DelFromCartReducer = createAction('DEL_FROM_CART'); 
 export const up_QTYReducer = createAction('up_QTY'); 
 export const down_QTYReducer = createAction('down_QTY'); 
+export const chosenSizeReducer = createAction('CHOSEN_SIZE_REDUCER' );
 
   export default createReducer(initialState, {
 
@@ -80,7 +81,7 @@ export const down_QTYReducer = createAction('down_QTY');
       
     },
     [chosenSizeReducer]: function (state, action){
-      debugger;
+      
       let newSize = action.payload;
         console.log('выбран размер'+ newSize)
     },

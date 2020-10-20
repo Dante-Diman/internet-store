@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { AddToCartReducer, chosenSizeReducer } from '../../../redux/cart-reducer';
+
 import { ShowDatailsReducer } from '../../../redux/product-details-reducer';
 import ProductDetails from './ProductDetails';
 /* import {AddToCartReducer} from '../../../redux/cart-reducer';
@@ -40,13 +40,9 @@ let mapDispatchToProps = (dispatch) =>{
    
     showDatailsReducer:() =>{
       dispatch(ShowDatailsReducer());
-    },
-    AddToCartReducer:(options) =>{
-      dispatch(AddToCartReducer(options));
-    },
-    ChosenSize:(p) =>{
-      dispatch(chosenSizeReducer(p));
-    },
+    }
+  
+   
   }
 } 
 export default connect(mapStateToProps, mapDispatchToProps) (ProductDetailsContainer);

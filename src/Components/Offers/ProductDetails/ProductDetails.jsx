@@ -1,8 +1,9 @@
 
 import React from 'react';
 import { Breadcrumb } from 'react-bootstrap';
-import SizeButton from '../AddToCartButton/SizeButton';
-import sizeButton from '../AddToCartButton/SizeButton'
+
+import SizeButtonContainer from '../AddToCartButton/SizeButtonContainer';
+
 
 
 import style from './ProductDetails.module.scss';
@@ -27,7 +28,7 @@ class ProductDetails extends React.Component {
         /* const numberOfItems =  4 */  
      
         let sizeElements = options.sizes.map( p => (
-            <SizeButton size={p} />));
+            <SizeButtonContainer size={p} />));
 
             
             let AddToCart = () => {
