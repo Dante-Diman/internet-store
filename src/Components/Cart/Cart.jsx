@@ -15,7 +15,7 @@ class Cart extends React.Component {
 
 
     render() {
-      
+      debugger;
       let state = this.props.Cart;
 
       const numberOfItems =  state.CartList.length ;
@@ -25,7 +25,7 @@ class Cart extends React.Component {
          productPrice={p.productPrice} 
          productDescription={p.productDescription} 
          count={p.count}
-         
+         size={state.chosenSize}
          />));
 
         return (

@@ -3,7 +3,7 @@ import coat2 from '../assets/catalog/coats/2.jpg';
 
 
 let initialState ={ 
-       
+  chosenSize:null,
     showMore: false,
     CartList:[{},
       {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1, size:null}/*не убирать пустой элемент - элементы не добавляются в пустой массив*/
@@ -23,7 +23,7 @@ export const chosenSizeReducer = createAction('CHOSEN_SIZE_REDUCER' );
 
     [AddToCartReducer]: function (state, action){
     
-      
+       
 
       let AddProductOptions = action.payload;
       
@@ -52,7 +52,7 @@ export const chosenSizeReducer = createAction('CHOSEN_SIZE_REDUCER' );
         
       }
    
-     
+       
     },
    
 
@@ -84,6 +84,7 @@ export const chosenSizeReducer = createAction('CHOSEN_SIZE_REDUCER' );
       
       let newSize = action.payload;
         console.log('выбран размер'+ newSize)
+        state.chosenSize = newSize;
     },
   }) 
 

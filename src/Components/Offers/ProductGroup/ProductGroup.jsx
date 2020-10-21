@@ -36,7 +36,9 @@ let showMore =state.showMore;
       productPrice={p.productPrice} 
       productDescription={p.productDescription} 
       count={p.count} 
-      sizes={p.sizes}/>));
+      sizes={p.sizes}
+      
+      />));
      
         return (
 <>

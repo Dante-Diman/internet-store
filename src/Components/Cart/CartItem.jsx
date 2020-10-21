@@ -18,6 +18,7 @@ export default class CartItem extends React.Component {
             productPrice:this.props.productPrice,
             productDescription:this.props.productDescription,
             count:this.props.count,
+            productSize:this.props.size,
 
         }
      
