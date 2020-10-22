@@ -6,7 +6,7 @@ let initialState ={
   chosenSize:null,
     showMore: false,
     CartList:[{},
-      {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1, size:null}/*не убирать пустой элемент - элементы не добавляются в пустой массив*/
+      /* {id:1, productUrl:coat2, productTitle:"Coat", productPrice:"90$", productDescription:"Coat-1" , count:1, size:null} *//*не убирать пустой элемент - элементы не добавляются в пустой массив*/
    
     ],
     
@@ -24,9 +24,13 @@ export const chosenSizeReducer = createAction('CHOSEN_SIZE_REDUCER' );
     [AddToCartReducer]: function (state, action){
     
        
-
-      let AddProductOptions = action.payload;
       
+      let AddProductOptions = action.payload;
+     
+     AddProductOptions.size=state.chosenSize;
+       
+      
+      console.log( AddProductOptions);
       let increment = action.payload.count;
      
    
@@ -82,9 +86,9 @@ export const chosenSizeReducer = createAction('CHOSEN_SIZE_REDUCER' );
     },
     [chosenSizeReducer]: function (state, action){
       
-      let newSize = action.payload;
-        console.log('выбран размер'+ newSize)
-        state.chosenSize = newSize;
+      state.chosenSize = action.payload;
+        console.log('выбран размер'+ state.chosenSize)
+        
     },
   }) 
 

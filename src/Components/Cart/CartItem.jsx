@@ -11,7 +11,7 @@ export default class CartItem extends React.Component {
  
  
     render() {
-        
+        debugger;
         let options= {
             id: this.props.id,
             productUrl:this.props.productUrl,
