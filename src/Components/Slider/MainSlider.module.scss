@@ -2,8 +2,8 @@
 .slide_text{
     position:absolute;
     background-color: burlywood ;
-    margin-top:25rem;
-   margin-left:150px; 
+    margin-top:20rem;
+   margin-left:20rem; 
     
 }
 
@@ -11,8 +11,8 @@
     
     margin-top: 10px;
     font-family: Lato;
-    font-size: 72px;
-    line-height: 42px;
+    font-size: 52px;
+    
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -20,30 +20,29 @@
 }
 @media (max-width: 1366px) {
 
-    .slide_text{
-        margin-left:185px; 
-    }
+  
     .title{
         
-      font-size: 62px;
-  
-      
+      font-size: 42px;
+
   }
     }
 @media (max-width: 1024px) {
 
-    .slide_text{
-        margin-left:165px; 
-    }
+ 
+
     .title{
         
-      font-size: 52px;
+      font-size: 32px;
   
       
   }
     }
 @media (max-width: 768px) {
-
+    .home_wrapper{
+    
+        display: none;
+    }
         .slide_text{
             margin-left:165px; 
         }

@@ -1,5 +1,5 @@
 import {createAction, createReducer} from '@reduxjs/toolkit';
-import coat2 from '../assets/catalog/coats/2.jpg';
+
 
 
 let initialState ={ 

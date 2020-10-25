@@ -1,16 +1,17 @@
+$site_width:1244px;
 $marker_place: center;
 *{text-align: $marker_place;}
 
 .page_wrapper{
     width: 100%;
-    max-width: 1180px;
+    max-width: 1244px;
 /* max-height: 2356px; */
 background-color: #ffffff;
 
 }
 .wrapper{
     display: flex;
-max-width: 1180px;
+max-width: $site_width;
 padding: 0px 0px;
 
 
@@ -26,7 +27,7 @@ padding: 0px 0px;
 }
 
 .site_content{
-    max-width:1180px;
+    max-width:$site_width;
    
    min-height: 535px;
    
@@ -85,7 +86,7 @@ background-color: #81a3a156;
     min-height:118px ;
     background: #84ddd756;
     font-size: 0px; 
-    max-width:1180px;
+    max-width:$site_width;
 }
 .footer{
    height: 250px;

@@ -13,7 +13,7 @@ import img3 from '../../assets/main_slider/3.jpg';
 export const HomeWrapper = styled.div`
 .slick-list{
   
-  
+  max-height:536px;
 
  
 
@@ -24,11 +24,12 @@ display:none;
   img{
  z-index:1;
  display:flex; 
-max-width:1180px;
+max-width:1244px;
+
 }
 .slick-dots li.slick-active button:before,.slick-dots li button:before{
 
-  font-size: 16px;
+  font-size: 14px;
 }
 .slick-dots {
   bottom: 25px;
@@ -68,7 +69,7 @@ class MainSlider extends React.Component {
        
       };
       return (
-        <HomeWrapper>
+        <HomeWrapper className={style.home_wrapper}>
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           
           <div style={{ Wslide}}>

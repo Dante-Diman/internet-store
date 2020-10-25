@@ -4,12 +4,13 @@ $burger_line_height:2px;
 $burger_line_color:#f5f114;
 
 $burger_position_X:0;
-$text_color:#ffffff;
+$text_color:#241e1e;
 $text_color_hover:#f1d906;
 $text_size:20px;
-$navbarBG_color:rgba(123,132,143, 5);
-$menuBG_color:rgba(123,132,143, 5);
+$navbarBG_color:rgb(255, 255, 255);
+$menuBG_color:rgb(255, 255, 255);
 
+$site_width:1244px;
 
 .mobile_login_basket{
     display: none;
@@ -17,7 +18,7 @@ $menuBG_color:rgba(123,132,143, 5);
 .navbar{
 position:fixed;
 width: 100%;
-max-width: 1180px;
+max-width: $site_width;
 top: 0;
 left:50;
 z-index: 10;
@@ -53,7 +54,7 @@ grid-template-areas: "logo list search";
 
 
 .container{
-max-width: 1180px;
+max-width: $site_width;
 margin: 0px auto;
 padding: 0px 10px;
 background-color: $navbarBG_color;
