@@ -16,6 +16,8 @@ import Footer from '../Footer/Footer';
 import CartContainer from '../Cart/CartContainer';
 
 import ProductDetailsContainer from '../Offers/ProductDetails/ProductDetailsContainer';
+import About from '../About/About';
+import Men from '../Offers/Categories/Men';
 
 class Grid extends React.Component {
     state = {
@@ -47,7 +49,8 @@ render(){
             <Route exact path='/internet-store/catalog/3' render={ () => <Catalog3 />} />  
             <Route exact path={this.state.developmentUrl} render={ () => <Offer />} />
             <Route exact path={this.state.developmentUrl} render={ () => <SignBlock />} />
-            
+            <Route exact path='/internet-store/AboutUs' render={ () => <About/>} />
+            <Route exact path='/internet-store/men' render={ () => <Men />} />
            
         </div> 
    

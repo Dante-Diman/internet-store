@@ -60,11 +60,11 @@ export default class Navbar extends React.Component {
                   <div className={style.navbar_menu_wrapper}>
                    <nav className={`${style.navbar_menu} ${this.state.togleStyleOn}` }  id='menu' >
                    <ul className={style.navbar_list}>
-                   <li><NavLink exact to ="/woman" activeClassName={style.activeLink} className={style.navItem}>woman</NavLink></li>
-                   <li><NavLink exact to="/men" activeClassName={style.activeLink} className={style.navItem}>men</NavLink></li>
-                   <li><NavLink exact to="/kids" activeClassName={style.activeLink} className={style.navItem}>kids</NavLink></li>
-                   <li><NavLink exact to="/commingSoon" activeClassName={style.activeLink} className={style.navItem}>comming soon</NavLink></li>
-                   <li><NavLink exact to="/about" activeClassName={style.activeLink} className={style.navItem}>about</NavLink></li>
+                   <li><NavLink exact to ="/internet-store/woman" activeClassName={style.activeLink} className={style.navItem}>woman</NavLink></li>
+                   <li><NavLink exact to="/internet-store/men" activeClassName={style.activeLink} className={style.navItem}>men</NavLink></li>
+                   <li><NavLink exact to="/internet-store/kids" activeClassName={style.activeLink} className={style.navItem}>kids</NavLink></li>
+                   <li><NavLink exact to="/internet-store/commingSoon" activeClassName={style.activeLink} className={style.navItem}>comming soon</NavLink></li>
+                   <li><NavLink exact to="/internet-store/AboutUs" activeClassName={style.activeLink} className={style.navItem}>about</NavLink></li>
                     </ul>
                     </nav>
                     </div>

@@ -1,0 +1,33 @@
+@import '../Offers/Catalog.module.scss';
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.aboutImage{
+   
+width: 580px;
+height: 316px;
+background-color: #fafafa;
+
+}
+.aboutText, title{
+    color: #606060;
+font-family: Lato;
+font-size: 14px;
+
+}
+
+   
+.title1{
+    font-size: 36px;
+    color: black;
+
+}
+.title2{
+    font-size: 24px;
+    color: black;
+}

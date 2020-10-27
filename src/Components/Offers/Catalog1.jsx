@@ -1,5 +1,5 @@
 
-import ReactDOM from 'react-dom';
+
 import React from 'react';
 import ReactImageZoom from 'react-image-zoom';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
