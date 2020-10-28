@@ -4,8 +4,9 @@
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: 1fr;
-grid-column-gap: 0px;
+grid-column-gap: 10px;
 grid-row-gap: 0px;
+margin: 20px;
 }
 .aboutImage{
    
@@ -20,7 +21,12 @@ font-family: Lato;
 font-size: 14px;
 
 }
-
+.aboutText{
+    .title2,.description{
+        text-align: left;
+        max-width: 80%;
+    }
+}
    
 .title1{
     font-size: 36px;

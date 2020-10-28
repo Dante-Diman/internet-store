@@ -6,7 +6,7 @@ import ContainerGroup1 from './ProductGroup/ContainerGroup1';
 import ContainerGroup2 from './ProductGroup/ContainerGroup2';
 import ContainerGroup3 from './ProductGroup/ContainerGroup3';
 import style from './Catalog.module.scss';
-class Catalog2 extends React.Component {
+class Catalog extends React.Component {
  
     render() {
       
@@ -38,4 +38,4 @@ class Catalog2 extends React.Component {
 
 
 
-export default Catalog2;
+export default Catalog;

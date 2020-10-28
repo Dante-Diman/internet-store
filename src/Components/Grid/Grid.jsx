@@ -4,7 +4,6 @@ import style from './Grid.module.scss';
 import MainSlider from '../Slider/MainSlider';
 import Offer from '../Offers/Offer';
 import Catalog1 from '../Offers/Catalog1';
-import Catalog2 from '../Offers/Catalog2';
 import Catalog3 from '../Offers/Catalog3';
 import SignBlock from '../SignBlock/SignBlock';
 import GallerySlider from '../GallerySlider/GallerySlider';
@@ -18,6 +17,7 @@ import CartContainer from '../Cart/CartContainer';
 import ProductDetailsContainer from '../Offers/ProductDetails/ProductDetailsContainer';
 import About from '../About/About';
 import Men from '../Offers/Categories/Men';
+import Catalog from '../Offers/Catalog';
 
 class Grid extends React.Component {
     state = {
@@ -43,7 +43,7 @@ render(){
          <Route exact path='/internet-store/catalog/basket' render={ () => <CartContainer />} />
          
           <Route exact path='/internet-store/catalog/1' render={ () => <Catalog1 />} />
-            <Route exact path='/internet-store/catalog/2' render={ () => <Catalog2 />} />
+            <Route exact path='/internet-store/catalog/2' render={ () => <Catalog />} />
             <Route exact path='/internet-store/catalog/2/product' render={ () => <ProductDetailsContainer />} /> 
 
             <Route exact path='/internet-store/catalog/3' render={ () => <Catalog3 />} />  

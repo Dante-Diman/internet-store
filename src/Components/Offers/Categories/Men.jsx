@@ -10,27 +10,32 @@ import ContainerGroup3 from '../ProductGroup/ContainerGroup3';
 import style from '../Catalog.module.scss';
 import MenDropdown from './MenDropdown';
 
+
 class Men extends React.Component {
  
     render() {
       
-           
         return (
 <>
 <Breadcrumb>
   <Breadcrumb.Item href="/internet-store">internet-store</Breadcrumb.Item>
   <Breadcrumb.Item active>Men</Breadcrumb.Item>
 </Breadcrumb>
+<div>
+<MenDropdown />
+<MenDropdown />
+<MenDropdown />
+</div>
+
 <ContainerGroup1 />
 <ContainerGroup2 />
 <ContainerGroup3 />
+
 <div className={style.category}>
     <p className={style.categoryTitle}></p>
     <p className={style.categorydescription}></p>
 </div>
-<div className={style.categoryOptions}>
-    <MenDropdown />
-      </div>
+
     
 
 

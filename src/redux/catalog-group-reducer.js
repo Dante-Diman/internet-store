@@ -20,7 +20,75 @@ import TShort5 from '../assets/catalog/TShorts/5.jpg';
 
 let initialState ={ 
        
-    
+Search:{
+  SearchOptions:[
+    {
+    sizes:[{
+      value: 'placeholder',
+          
+    },
+    {
+      value: 'low',
+      label: '39',
+    },
+    {
+      value: 'middle',
+      label: '40',
+    },
+    {
+      value: 'high',
+      label: '42',
+    },
+    {
+      value: 'ultra',
+      label: '42 or more',
+    },],
+      
+    prices:[{
+      value: 'placeholder',
+          
+    },
+    {
+      value: 'low',
+      label: '€20-30',
+    },
+    {
+      value: 'middle',
+      label: '€30-50',
+    },
+    {
+      value: 'high',
+      label: '€50-100',
+    },
+    {
+      value: 'ultra',
+      label: '€100 or more',
+    },],
+    colors:[{
+      value: 'placeholder',
+          
+    },
+    {
+      value: 'red',
+      label: 'red',
+    },
+    {
+      value: 'blue',
+      label: 'blue',
+    },
+    {
+      value: 'black',
+      label: 'black',
+    },
+    {
+      value: 'other',
+      label: 'other',
+    },]
+
+    }
+  ]
+},
+  
 Group1:{
   productGroupTitle:"Coats",
   showMore: false,
