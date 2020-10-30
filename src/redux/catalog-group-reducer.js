@@ -20,12 +20,12 @@ import TShort5 from '../assets/catalog/TShorts/5.jpg';
 
 let initialState ={ 
        
-Search:{
-  SearchOptions:[
-    {
+
+  SearchOptions:{
+    
     sizes:[{
       value: 'placeholder',
-          
+      label:   'sizes' 
     },
     {
       value: 'low',
@@ -46,7 +46,7 @@ Search:{
       
     prices:[{
       value: 'placeholder',
-          
+      label:   'prices'   
     },
     {
       value: 'low',
@@ -66,7 +66,7 @@ Search:{
     },],
     colors:[{
       value: 'placeholder',
-          
+      label:   'colors'    
     },
     {
       value: 'red',
@@ -85,9 +85,9 @@ Search:{
       label: 'other',
     },]
 
-    }
-  ]
 },
+
+
   
 Group1:{
   productGroupTitle:"Coats",

@@ -10,7 +10,7 @@ margin: 20px;
 }
 .aboutImage{
    
-width: 580px;
+max-width: 580px;
 height: 316px;
 background-color: #fafafa;
 
@@ -36,4 +36,15 @@ font-size: 14px;
 .title2{
     font-size: 24px;
     color: black;
+}
+@media(max-width:1024px),(max-width:767px){
+    .parent {
+        grid-template-columns:  1fr;
+    }
+    .aboutText{
+        .title2,.description{
+            text-align: left;
+            max-width: 90%;
+        }
+    }
 }

@@ -2,11 +2,9 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import  AddToCartReducer  from '../../../redux/cart-reducer';
-import {CatalogReducerGroup1} from '../../../redux/catalog-group-reducer';
-import { ShowDatailsReducer } from '../../../redux/product-details-reducer';
-import MenDropdown from './MenDropdown';
 
+import MenDropdown from './MenDropdown';
+import style from './Men.module.scss';
 
 
 
@@ -17,11 +15,12 @@ class MenDropdownContainer extends React.Component {
 
         return (
 <>
-<MenDropdown {...this.props} Price={this.props.Catalog}  Cart={this.props.Cart} />
-<MenDropdown {...this.props} Sizes={this.props.Catalog}  Cart={this.props.Cart} />
-<MenDropdown {...this.props} Colors={this.props.Catalog}  Cart={this.props.Cart} />
+<div className={style.lists}>
+<MenDropdown {...this.props}  SearchOptions={this.props.Search.sizes} />
+<MenDropdown {...this.props}  SearchOptions={this.props.Search.prices} />
+<MenDropdown {...this.props}  SearchOptions={this.props.Search.colors} />
 
-
+</div>
 </>
             );
 
@@ -30,16 +29,10 @@ class MenDropdownContainer extends React.Component {
 }
 
 let mapStateToProps = (state) => ({
- 
-Price: state.CatalogReducerGroup.SearchOptions.prices,
-Sizes: state.CatalogReducerGroup.SearchOptions.sizes,
-Colors: state.CatalogReducerGroup.SearchOptions.colors,
-
-Cart: state.Cart
-  
-  
+  Search: state.CatalogReducerGroup.SearchOptions
 });
-let mapDispatchToProps = (dispatch) =>{
+
+/* let mapDispatchToProps = (dispatch) =>{
   return {
     Group_Reducer: () => {
       dispatch(CatalogReducerGroup1());
@@ -51,5 +44,5 @@ let mapDispatchToProps = (dispatch) =>{
       dispatch(ShowDatailsReducer (Options));
     }
   }
-} 
-export default connect(mapStateToProps,mapDispatchToProps) (MenDropdownContainer);
+}  */
+export default connect(mapStateToProps, null) (MenDropdownContainer);

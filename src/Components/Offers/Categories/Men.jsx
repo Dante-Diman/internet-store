@@ -8,7 +8,8 @@ import ContainerGroup1 from '../ProductGroup/ContainerGroup1';
 import ContainerGroup2 from '../ProductGroup/ContainerGroup2';
 import ContainerGroup3 from '../ProductGroup/ContainerGroup3';
 import style from '../Catalog.module.scss';
-import MenDropdown from './MenDropdown';
+/* import MenDropdown from './MenDropdown'; */
+import MenDropdownContainer from './MenDropdownContainer';
 
 
 class Men extends React.Component {
@@ -22,9 +23,7 @@ class Men extends React.Component {
   <Breadcrumb.Item active>Men</Breadcrumb.Item>
 </Breadcrumb>
 <div>
-<MenDropdown />
-<MenDropdown />
-<MenDropdown />
+<MenDropdownContainer />
 </div>
 
 <ContainerGroup1 />

@@ -24,11 +24,11 @@ export default class ProductCard extends React.Component {
             size:this.props.Cart.chosenSize   
         }  
 
-        let AddToCart = () => {
+    /*     let AddToCart = () => {
            
             this.props.AddToCartReducer(options);
            
-        }
+        } */
         let ShowDatails = () => {
            
             this.props.ShowDatailsReducer(options);
@@ -47,7 +47,7 @@ export default class ProductCard extends React.Component {
   </NavLink>
   <div className={style.product_card_price}>{options.productPrice}</div>
   
-  <button className={style.buy_button} onClick={AddToCart}>add to cart</button>
+  {/* <button className={style.buy_button} onClick={AddToCart}>add to cart</button> */}
   </div>
                      
             );

@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import {FormControl, InputLabel, Select } from '@material-ui/core';
 
-const initialstate = [
+/* const initialstate = [
   {
     value: 'placeholder',
         
@@ -24,10 +24,9 @@ const initialstate = [
     value: 'ultra',
     label: '€100 or more',
   },
-];
+]; */
 
-const content = initialstate.map(c =>((c.value === 'placeholder') ?
-<option aria-label="None" value="" /> :  <option value={c.value} >{c.label}</option> ) );
+
 
 
        
@@ -41,14 +40,23 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MenDropdown() {
+export default function MenDropdown(props) {
+  
+  const SearchOptions = props.SearchOptions; 
+  let placeholder;
+  SearchOptions.find(c =>(c.value === 'placeholder')?
+  placeholder=c.label  :  '' );
+ 
+
+  const content = SearchOptions.map(c =>((c.value === 'placeholder') ?
+<option aria-label="None" value="" /> :  <option value={c.value} >{c.label}</option> ) );
   const classes = useStyles();
 
   return (
    
       <div>
          <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="native-simple">price</InputLabel>
+        <InputLabel htmlFor="native-simple">{placeholder}</InputLabel>
      <Select
     native
    
