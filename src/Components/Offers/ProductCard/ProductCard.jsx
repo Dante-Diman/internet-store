@@ -38,11 +38,9 @@ export default class ProductCard extends React.Component {
           
               <div className={style.product_card} >
 
- <div className={style.product_image} style={{
-                backgroundImage: `url(${this.props.productUrl})`,
+ <div className={style.product_image} 
+ style={{backgroundImage: `url(${this.props.productUrl})`,}}>
                
-              }}>
-                  <img src={this.props.productUrl} alt=""/>
               </div>
    <NavLink exact to ="/internet-store/catalog/2/product" onClick={ShowDatails}>            
   <div className={style.product_card_description}>{options.productDescription}</div>
