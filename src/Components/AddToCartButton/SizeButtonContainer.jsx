@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { connect } from 'react-redux';
-import { chosenSizeReducer } from '../../../redux/cart-reducer';
+import { chosenSizeReducer } from '../../redux/cart-reducer';
 
 import SizeButton from './SizeButton';
 

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { AddToCartReducer } from '../../../redux/cart-reducer';
+import { AddToCartReducer } from '../../redux/cart-reducer';
 
 
 import ProductDetails from './ProductDetails';
