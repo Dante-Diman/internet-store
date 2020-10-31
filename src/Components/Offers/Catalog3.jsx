@@ -4,7 +4,7 @@
 import React from 'react';
 import { Breadcrumb } from 'react-bootstrap';
 
-import style from './Catalog.module.scss';
+import style from './Catalog2.module.scss';
 import ImageGridList from './useStyles/ImageGridList';
 class Catalog3 extends React.Component {
  

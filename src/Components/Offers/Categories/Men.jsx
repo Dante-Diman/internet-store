@@ -7,7 +7,7 @@ import { Breadcrumb } from 'react-bootstrap';
 import ContainerGroup1 from '../ProductGroup/ContainerGroup1';
 import ContainerGroup2 from '../ProductGroup/ContainerGroup2';
 import ContainerGroup3 from '../ProductGroup/ContainerGroup3';
-import style from '../Catalog.module.scss';
+import style from '../Catalog2.module.scss';
 /* import MenDropdown from './MenDropdown'; */
 import MenDropdownContainer from './MenDropdownContainer';
 
