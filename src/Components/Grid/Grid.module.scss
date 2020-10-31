@@ -89,7 +89,9 @@ background-color: #81a3a156;
     max-width:$site_width;
 }
 .footer{
-   height: 250px;
+  display: flex;
+  justify-content: center;
    width: 100%;
    background-color: rgb(114, 50, 50);
+   padding: 20px;
 }

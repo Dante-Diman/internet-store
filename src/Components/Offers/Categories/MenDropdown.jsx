@@ -33,7 +33,7 @@ import {FormControl, InputLabel, Select } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120,
+    maxWidth: 120,
   },
   selectEmpty: {
     marginTop: theme.spacing(2),

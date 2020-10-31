@@ -63,7 +63,8 @@ text-transform: uppercase;
 }
 @media(max-width:1024px),(max-width:767px){
     .footer_wrap {
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr ;
+        
     }
    
  
