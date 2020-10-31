@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/internet-store/static/css/main.4adf617c.chunk.css",
+    "main.js": "/internet-store/static/js/main.f653278c.chunk.js",
+    "main.js.map": "/internet-store/static/js/main.f653278c.chunk.js.map",
+    "runtime-main.js": "/internet-store/static/js/runtime-main.02d89c5f.js",
+    "runtime-main.js.map": "/internet-store/static/js/runtime-main.02d89c5f.js.map",
+    "static/css/2.323389be.chunk.css": "/internet-store/static/css/2.323389be.chunk.css",
+    "static/js/2.5c3cc99d.chunk.js": "/internet-store/static/js/2.5c3cc99d.chunk.js",
+    "static/js/2.5c3cc99d.chunk.js.map": "/internet-store/static/js/2.5c3cc99d.chunk.js.map",
+    "index.html": "/internet-store/index.html",
+    "precache-manifest.b4121fae728f5ba6c351780f24442e42.js": "/internet-store/precache-manifest.b4121fae728f5ba6c351780f24442e42.js",
+    "service-worker.js": "/internet-store/service-worker.js",
+    "static/css/2.323389be.chunk.css.map": "/internet-store/static/css/2.323389be.chunk.css.map",
+    "static/css/main.4adf617c.chunk.css.map": "/internet-store/static/css/main.4adf617c.chunk.css.map",
+    "static/js/2.5c3cc99d.chunk.js.LICENSE.txt": "/internet-store/static/js/2.5c3cc99d.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/internet-store/static/media/1.e2f87ca5.jpg",
+    "static/media/10.jpg": "/internet-store/static/media/10.db27a5b5.jpg",
+    "static/media/2.jpg": "/internet-store/static/media/2.fb93f1e0.jpg",
+    "static/media/3.jpg": "/internet-store/static/media/3.86d7b8ab.jpg",
+    "static/media/4.jpg": "/internet-store/static/media/4.da157f86.jpg",
+    "static/media/5.jpg": "/internet-store/static/media/5.d794ac03.jpg",
+    "static/media/5.jfif": "/internet-store/static/media/5.a16680e2.jfif",
+    "static/media/6.jpg": "/internet-store/static/media/6.985b757a.jpg",
+    "static/media/7.jpg": "/internet-store/static/media/7.fbb65403.jpg",
+    "static/media/8.jpg": "/internet-store/static/media/8.06b48baa.jpg",
+    "static/media/9.jpg": "/internet-store/static/media/9.baa617df.jpg",
+    "static/media/Thin_Left_Down_Arrow.svg": "/internet-store/static/media/Thin_Left_Down_Arrow.dd97d317.svg",
+    "static/media/all.css": "/internet-store/static/media/fa-solid-900.8e1ed89b.woff2",
+    "static/media/facebook_ico.svg": "/internet-store/static/media/facebook_ico.6d63a7b1.svg",
+    "static/media/instagram_ico.svg": "/internet-store/static/media/instagram_ico.11dcb5fa.svg",
+    "static/media/logo.svg": "/internet-store/static/media/logo.ea97e7bc.svg",
+    "static/media/twit-ico-offer.svg": "/internet-store/static/media/twit-ico-offer.02d7d0a5.svg",
+    "static/media/twitter_ico.svg": "/internet-store/static/media/twitter_ico.06cc66a8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02d89c5f.js",
+    "static/css/2.323389be.chunk.css",
+    "static/js/2.5c3cc99d.chunk.js",
+    "static/css/main.4adf617c.chunk.css",
+    "static/js/main.f653278c.chunk.js"
+  ]
+}
