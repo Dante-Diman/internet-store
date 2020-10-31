@@ -6,7 +6,7 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import img1 from '../../assets/catalog/jackets/1.jpg';
 import img2 from '../../assets/catalog/jackets/2.jpg';
 import style from './Catalog1.module.scss';
-import BuyBlock from './BuyBlock/BuyBlock';
+import BuyBlock from '../BuyBlock/BuyBlock';
 class Catalog1 extends React.Component {
     
     state = {

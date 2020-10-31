@@ -14,9 +14,9 @@ import LoginWindowContainer from '../LoginWindow/LoginWindowContainer';
 import Footer from '../Footer/Footer';
 import CartContainer from '../Cart/CartContainer';
 
-import ProductDetailsContainer from '../Offers/ProductDetails/ProductDetailsContainer';
+import ProductDetailsContainer from '../ProductDetails/ProductDetailsContainer';
 import About from '../About/About';
-import Men from '../Offers/Categories/Men';
+import Men from '../Categories/Men';
 import Catalog2 from '../Offers/Catalog2';
 
 class Grid extends React.Component {
