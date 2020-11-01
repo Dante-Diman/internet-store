@@ -17,3 +17,8 @@ $FONT_SHOWMORE:18px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 20px;
     }
+    @media(max-width:1095px), (max-width:767px){
+        .product_category{
+            grid-template-columns: 1fr 1fr ;
+        }   
+    }

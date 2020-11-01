@@ -1,14 +1,14 @@
 $width_logo_image:100px;
 $width_logo_image_small:80px;
 $burger_line_height:2px;
-$burger_line_color:#f5f114;
+$burger_line_color:#000000;
 
 $burger_position_X:0;
 $text_color:#241e1e;
-$text_color_hover:#f1d906;
+$text_color_hover:#3906f1;
 $text_size:20px;
 $navbarBG_color:rgb(255, 255, 255);
-$menuBG_color:rgb(255, 255, 255);
+$menuBG_color:rgba(255, 255, 255,0.5);
 
 $site_width:1244px;
 
@@ -117,12 +117,12 @@ background-color: $navbarBG_color;
         top: 0;
         right: 0;
         width: 50%;
-        height: 40%;
+        min-height: 40%;
         background-color: $menuBG_color;
         padding: 70px 10px 20px 10px;
-        border: 1px solid red;
+        /* border: 1px solid rgb(22, 18, 18); */
         transition-property: top ;
-        
+        border-radius: 5px;
     }
   
     .navbar_list{
