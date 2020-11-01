@@ -1,9 +1,6 @@
 $width_logo_image:100px;
 $width_logo_image_small:80px;
-$burger_line_height:2px;
-$burger_line_color:#000000;
-
-$burger_position_X:0;
+$burger_bg_color: #8b8383;
 $text_color:#241e1e;
 $text_color_hover:#3906f1;
 $text_size:20px;
@@ -147,36 +144,15 @@ background-color: $navbarBG_color;
     }
     /* иконка бургера */
     .navbar_burger{
+        margin: 2px;
         display:block;
         position: relative;
-        width: 30px;
-        height: 20px;
+        min-width: 30px;
+        min-height: 30px;
         z-index: 3;
-        span{
-            position: absolute;
-            background-color: $burger_line_color;
-            left: $burger_position_X;
-            width: 100%;
-            height: $burger_line_height;
-            top: 9px;
-        }
-        
-    } 
-    .navbar_burger:before,
-    .navbar_burger:after{
-        content: '';
-        background-color: $burger_line_color;
-        position: absolute;
-        width: 100%;    
-        height: $burger_line_height;
-        left: $burger_position_X;
-    }
-    .navbar_burger:before{
-        top: 0;
-    }
-    .navbar_burger:after{
-        bottom: 0;
-        
+       background-color: $burger_bg_color;
+        padding: 10px;
+        border-radius: 5px;
     }
   /* иконка бургера */
 

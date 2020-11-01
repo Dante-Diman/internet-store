@@ -20,6 +20,7 @@ import Men from '../Categories/Men';
 import Catalog2 from '../Offers/Catalog2';
 import Women from '../Categories/Women';
 import Kids from '../Categories/Kids';
+import ComingSoon from '../Categories/ComingSoon';
 
 class Grid extends React.Component {
     state = {
@@ -55,6 +56,7 @@ render(){
             <Route exact path='/internet-store/men' render={ () => <Men />} />
             <Route exact path='/internet-store/woman' render={ () => <Women />} />
             <Route exact path='/internet-store/kids' render={ () => <Kids />} />
+            <Route exact path='/internet-store/commingsoon' render={ () => <ComingSoon />} />
         </div> 
    
     <div className={`${style.listing_gallery} `}>

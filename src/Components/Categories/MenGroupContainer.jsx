@@ -3,7 +3,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import  AddToCartReducer  from '../../redux/cart-reducer';
-import {CatalogReducerGroup1} from '../../redux/catalog-group-reducer';
+import {CatalogReducerGroup2} from '../../redux/catalog-group-reducer';
 import { ShowDatailsReducer } from '../../redux/product-details-reducer';
 import ProductGroup from '../ProductGroup/ProductGroup';
 
@@ -38,7 +38,7 @@ Cart: state.Cart
 let mapDispatchToProps = (dispatch) =>{
   return {
     Group_Reducer: () => {
-      dispatch(CatalogReducerGroup1());
+      dispatch(CatalogReducerGroup2());
     },
     AddToCartReducer:() =>{
       dispatch(AddToCartReducer());

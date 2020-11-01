@@ -2,7 +2,7 @@ import React from 'react';
 import style from "./Navbar.module.scss";
 import {NavLink} from 'react-router-dom';
 import img from '../../assets/svg/logo.svg';
-
+import burgersvg from '../../assets/svg/Shape_1.svg'
 import "@fortawesome/fontawesome-free/css/all.css";
 import Search from './Search';
 
@@ -54,7 +54,8 @@ export default class Navbar extends React.Component {
 
                     <div className={style.burger_wrapper}>
                     <div className={`${style.navbar_burger } `} onClick={this.toggleMobileMenu}>
-                        <span></span>
+                       {/*  <span></span> */}
+                        <img src={burgersvg} alt="burger"/>
                     </div>
                     </div>
                   <div className={style.navbar_menu_wrapper}>
@@ -63,7 +64,7 @@ export default class Navbar extends React.Component {
                    <li><NavLink exact to ="/internet-store/woman" activeClassName={style.activeLink} className={style.navItem}>woman</NavLink></li>
                    <li><NavLink exact to="/internet-store/men" activeClassName={style.activeLink} className={style.navItem}>men</NavLink></li>
                    <li><NavLink exact to="/internet-store/kids" activeClassName={style.activeLink} className={style.navItem}>kids</NavLink></li>
-                   <li><NavLink exact to="/internet-store/commingSoon" activeClassName={style.activeLink} className={style.navItem}>comming soon</NavLink></li>
+                   <li><NavLink exact to="/internet-store/commingsoon" activeClassName={style.activeLink} className={style.navItem}>comming soon</NavLink></li>
                    <li><NavLink exact to="/internet-store/AboutUs" activeClassName={style.activeLink} className={style.navItem}>about</NavLink></li>
                     </ul>
                     </nav>

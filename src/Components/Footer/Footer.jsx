@@ -23,7 +23,7 @@ render(){
                     Men  </NavLink>
                     <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/Kids" >
                     Kids</NavLink>
-                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/ComingSoon" >
+                    <NavLink exact activeClassName={style.activeLink} className={style.footerLink} to="/internet-store/commingsoon" >
                     Coming Soon</NavLink>
                   
                     

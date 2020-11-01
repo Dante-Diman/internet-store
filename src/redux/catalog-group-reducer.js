@@ -129,11 +129,11 @@ productList:[
 Group4: {
   showMore: false,
   productList:[
-    {id:16, productUrl:'../assets/catalog/TShorts/1.jpg', productTitle:"TShort", productPrice:"0$", productDescription:"Short-1" ,count:1, sizes:[38,39,40,42]},
-    {id:17, productUrl:'../assets/catalog/TShorts/1.jpg', productTitle:"TShort", productPrice:"0$", productDescription:"Short-2" ,count:1, sizes:[38,39,40,42]},
-    {id:18, productUrl:'../assets/catalog/TShorts/1.jpg', productTitle:"TShort", productPrice:"0$", productDescription:"Short-3" ,count:1, sizes:[38,39,40,42]},
-    {id:19, productUrl:'../assets/catalog/TShorts/1.jpg', productTitle:"TShort", productPrice:"0$", productDescription:"Short-4" ,count:1, sizes:[38,39,40,42]},
-    {id:20, productUrl:'../assets/catalog/TShorts/1.jpg', productTitle:"TShort", productPrice:"0$", productDescription:"Short-5" ,count:1, sizes:[38,39,40,42]}
+    {id:16, productUrl:TShort1, productTitle:"new", productPrice:"0$", productDescription:"Short-1" ,count:1, sizes:[38,39,40,42]},
+    {id:17, productUrl:outwear1, productTitle:"new", productPrice:"0$", productDescription:"Short-2" ,count:1, sizes:[38,39,40,42]},
+    {id:18, productUrl:outwear3, productTitle:"new", productPrice:"0$", productDescription:"Short-3" ,count:1, sizes:[38,39,40,42]},
+    {id:19, productUrl:coat3, productTitle:"new", productPrice:"0$", productDescription:"Short-4" ,count:1, sizes:[38,39,40,42]},
+    {id:20, productUrl:coat5, productTitle:"new", productPrice:"0$", productDescription:"Short-5" ,count:1, sizes:[38,39,40,42]}
   ]
   },
     
