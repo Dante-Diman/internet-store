@@ -32,18 +32,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 } */
-.product_card{
-    display: grid;
-    grid-template-areas: 'image description
-                            image description' ;
- 
-}
-.product_image{
+
+/* .product_image{
     grid-area: 'image';
 }
 .product_card_color,.product_card_size,.product_card_QTY,.Cart_QTY_buttons,.product_card_amount,.del_button{
     grid-area: 'description';
-}
+} */
 }
 .category_title,.product_card{
     padding: 10px 0px 10px 10px;

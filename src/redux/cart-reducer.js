@@ -87,7 +87,7 @@ export const chosenSizeReducer = createAction('CHOSEN_SIZE_REDUCER' );
     [chosenSizeReducer]: function (state, action){
       
       state.chosenSize = action.payload;
-        console.log('выбран размер'+ state.chosenSize)
+      
         
     },
   }) 
