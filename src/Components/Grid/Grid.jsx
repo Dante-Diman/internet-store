@@ -18,6 +18,8 @@ import ProductDetailsContainer from '../ProductDetails/ProductDetailsContainer';
 import About from '../About/About';
 import Men from '../Categories/Men';
 import Catalog2 from '../Offers/Catalog2';
+import Women from '../Categories/Women';
+import Kids from '../Categories/Kids';
 
 class Grid extends React.Component {
     state = {
@@ -51,7 +53,8 @@ render(){
             <Route exact path={this.state.developmentUrl} render={ () => <SignBlock />} />
             <Route exact path='/internet-store/AboutUs' render={ () => <About/>} />
             <Route exact path='/internet-store/men' render={ () => <Men />} />
-           
+            <Route exact path='/internet-store/woman' render={ () => <Women />} />
+            <Route exact path='/internet-store/kids' render={ () => <Kids />} />
         </div> 
    
     <div className={`${style.listing_gallery} `}>

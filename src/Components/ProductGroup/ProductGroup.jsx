@@ -22,7 +22,7 @@ handleClick() {
     
       let state = this.props.Catalog;
 
-
+debugger;
 let showMore =state.showMore;
       const numberOfItems = showMore ? state.productList.length : 4
      

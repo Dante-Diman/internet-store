@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MenDropdown(props) {
+export default function CatSearchDropdown(props) {
   
   const SearchOptions = props.SearchOptions; 
   let placeholder;

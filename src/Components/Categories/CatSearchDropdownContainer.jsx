@@ -3,12 +3,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import MenDropdown from './MenDropdown';
-import style from './Men.module.scss';
+import MenDropdown from './CatSearchDropdown';
+import style from './Category.module.scss';
 
 
 
-class MenDropdownContainer extends React.Component {
+class CatSearchDropdownContainer extends React.Component {
  
     render() {
      
@@ -45,4 +45,4 @@ let mapStateToProps = (state) => ({
     }
   }
 }  */
-export default connect(mapStateToProps, null) (MenDropdownContainer);
+export default connect(mapStateToProps, null) (CatSearchDropdownContainer);

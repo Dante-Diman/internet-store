@@ -2,12 +2,17 @@
 
 import React from 'react';
 import { Breadcrumb } from 'react-bootstrap';
+
+
+
+
 import style from './Category.module.scss';
 import CatSearchDropdownContainer from './CatSearchDropdownContainer';
-import MenGroupContainer from './MenGroupContainer';
+import KidsGroupContainer from './KidsGroupContainer';
 
 
-class Men extends React.Component {
+
+class Kids extends React.Component {
  
     render() {
       
@@ -15,13 +20,12 @@ class Men extends React.Component {
 <>
 <Breadcrumb>
   <Breadcrumb.Item href="/internet-store">internet-store</Breadcrumb.Item>
-  <Breadcrumb.Item active>Men</Breadcrumb.Item>
+  <Breadcrumb.Item active>Kids</Breadcrumb.Item>
 </Breadcrumb>
 <div>
 <CatSearchDropdownContainer />
 </div>
-
-<MenGroupContainer />
+<KidsGroupContainer />
 
 <div className={style.category}>
     <p className={style.categoryTitle}></p>
@@ -46,4 +50,4 @@ class Men extends React.Component {
 
 
 
-export default Men;
+export default Kids;
