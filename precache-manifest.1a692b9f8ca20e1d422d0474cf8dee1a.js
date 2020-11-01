@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a37df6278d73353ac03d5e14c460511",
+    "revision": "c7809be2576b65445131abe3c6012a32",
     "url": "/internet-store/index.html"
   },
   {
-    "revision": "ea81fee1c518878e2b88",
+    "revision": "b030aeb53638eb9ea100",
     "url": "/internet-store/static/css/2.323389be.chunk.css"
   },
   {
-    "revision": "c30fd249021f243f4700",
-    "url": "/internet-store/static/css/main.b10196f0.chunk.css"
+    "revision": "60d07b7b002bc208fbd9",
+    "url": "/internet-store/static/css/main.17358d2e.chunk.css"
   },
   {
-    "revision": "ea81fee1c518878e2b88",
-    "url": "/internet-store/static/js/2.5c3cc99d.chunk.js"
+    "revision": "b030aeb53638eb9ea100",
+    "url": "/internet-store/static/js/2.4762aae0.chunk.js"
   },
   {
     "revision": "6ba7619993dff61ed196d50bfa8ff4f1",
-    "url": "/internet-store/static/js/2.5c3cc99d.chunk.js.LICENSE.txt"
+    "url": "/internet-store/static/js/2.4762aae0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c30fd249021f243f4700",
-    "url": "/internet-store/static/js/main.dc4908d9.chunk.js"
+    "revision": "60d07b7b002bc208fbd9",
+    "url": "/internet-store/static/js/main.5157a13b.chunk.js"
   },
   {
     "revision": "685dcadc9fee4cdee09b",
@@ -76,10 +76,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/internet-store/static/media/2.8f454b6c.jpg"
   },
   {
-    "revision": "960805ae611fa681611d0257975db5e2",
-    "url": "/internet-store/static/media/2.960805ae.jpg"
-  },
-  {
     "revision": "ce7529c7abc5346ebba278c3407270e1",
     "url": "/internet-store/static/media/2.ce7529c7.jpg"
   },
@@ -114,10 +110,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "01083318d1063ea067a75e86f6b717d9",
     "url": "/internet-store/static/media/4.01083318.jpg"
-  },
-  {
-    "revision": "359b14a7e2890005d334a689a13dd843",
-    "url": "/internet-store/static/media/4.359b14a7.jpg"
   },
   {
     "revision": "b2190ab043eb8149198736951e35ce1f",
@@ -156,16 +148,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/internet-store/static/media/6.0d5473a0.jpg"
   },
   {
-    "revision": "985b757a831f9aadaa4e3ebc0d338899",
-    "url": "/internet-store/static/media/6.985b757a.jpg"
-  },
-  {
     "revision": "fbb65403609cb8feb7e9a272a9460ecd",
     "url": "/internet-store/static/media/7.fbb65403.jpg"
-  },
-  {
-    "revision": "06b48baad586fbecf2965f567ab5e0f6",
-    "url": "/internet-store/static/media/8.06b48baa.jpg"
   },
   {
     "revision": "baa617df1eb6bb14dbaf79ed6b2d078b",
